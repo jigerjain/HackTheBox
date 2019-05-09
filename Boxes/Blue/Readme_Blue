@@ -1,0 +1,11 @@
+Readme Blue
+
+Found samba services running 135, 139, 445
+
+OS: Windows 7 7601 SP1
+
+Vulnerable to MS17-010
+Exploited via metasploit
+
+Also scripts from MS17-010 manual exploits works
+User: Haris
