@@ -1,0 +1,68 @@
+[*] ntp found on udp/123.
+
+
+
+[*] ssh found on tcp/22.
+
+
+
+[*] smtp found on tcp/25.
+
+
+
+[*] http found on tcp/80.
+
+
+
+[*] pop3 found on tcp/110.
+
+
+
+[*] rpcbind found on tcp/111.
+
+
+
+[*] imap found on tcp/143.
+
+
+
+[*] ssl/http found on tcp/443.
+
+
+
+[*] ssl/imap found on tcp/993.
+
+
+
+[*] pop3 found on tcp/995.
+
+
+
+[*] mysql found on tcp/3306.
+
+
+
+[*] upnotifyp found on tcp/4445.
+
+
+
+[*] http found on tcp/10000.
+
+
+
+[*] status found on tcp/745.
+
+
+
+[*] sieve found on tcp/4190.
+
+
+
+[*] hylafax found on tcp/4559.
+
+
+
+[*] asterisk found on tcp/5038.
+
+
+

@@ -1,0 +1,16 @@
+
+Gobuster v1.4.1              OJ Reeves (@TheColonial)
+=====================================================
+=====================================================
+[+] Mode         : dir
+[+] Url/Domain   : http://10.10.10.7:80/
+[+] Threads      : 10
+[+] Wordlist     : /usr/share/seclists/Discovery/Web-Content/common.txt
+[+] Status codes : 301,302,307,403,200,204
+[+] Show length  : true
+[+] Extensions   : .txt,.html,.php,.asp,.aspx
+[+] Expanded     : true
+=====================================================
+[-] Wildcard response found: http://10.10.10.7:80/83476f7e-7625-4245-83ff-bd9a21c1d750 => 302
+[-] To force processing of Wildcard responses, specify the '-fw' switch.
+=====================================================

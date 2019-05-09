@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu May  9 01:42:40 2019 as: nmap -vv -&#45;reason -Pn -sV -p 110 &quot;-&#45;script=(pop3* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_110_pop3_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_110_pop3_nmap.xml 10.10.10.7 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 110 &quot;-&#45;script=(pop3* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_110_pop3_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_110_pop3_nmap.xml 10.10.10.7" start="1557380560" startstr="Thu May  9 01:42:40 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="110"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1557380561"/>
+<taskend task="NSE" time="1557380561"/>
+<taskbegin task="NSE" time="1557380561"/>
+<taskend task="NSE" time="1557380561"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1557380561"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1557380561"/>
+<taskbegin task="SYN Stealth Scan" time="1557380561"/>
+<taskend task="SYN Stealth Scan" time="1557380561" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1557380562"/>
+<taskend task="Service scan" time="1557380572" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1557380572"/>
+<taskprogress task="NSE" time="1557380603" percent="87.72" remaining="5" etc="1557380607"/>
+<taskprogress task="NSE" time="1557380633" percent="92.98" remaining="5" etc="1557380638"/>
+<taskprogress task="NSE" time="1557380663" percent="98.25" remaining="2" etc="1557380665"/>
+<taskend task="NSE" time="1557380671"/>
+<taskbegin task="NSE" time="1557380671"/>
+<taskprogress task="NSE" time="1557380702" percent="66.67" remaining="16" etc="1557380717"/>
+<taskend task="NSE" time="1557380706"/>
+<host starttime="1557380561" endtime="1557380706"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="pop3" product="Cyrus pop3d" version="2.3.7-Invoca-RPM-2.3.7-7.el5_6.4" hostname="example.com" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server:2.3.7-invoca-rpm-2.3.7-7.el5_6.4</cpe></service><script id="pop3-capabilities" output="STLS LOGIN-DELAY(0) UIDL USER TOP PIPELINING EXPIRE(NEVER) APOP AUTH-RESP-CODE RESP-CODES IMPLEMENTATION(Cyrus POP3 server v2)"/><script id="sslv2-drown" output="&#xa;"></script></port>
+</ports>
+<times srtt="20901" rttvar="20901" to="104505"/>
+</host>
+<taskbegin task="NSE" time="1557380706"/>
+<taskend task="NSE" time="1557380706"/>
+<taskbegin task="NSE" time="1557380706"/>
+<taskend task="NSE" time="1557380706"/>
+<runstats><finished time="1557380706" timestr="Thu May  9 01:45:06 2019" elapsed="146.32" summary="Nmap done at Thu May  9 01:45:06 2019; 1 IP address (1 host up) scanned in 146.32 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

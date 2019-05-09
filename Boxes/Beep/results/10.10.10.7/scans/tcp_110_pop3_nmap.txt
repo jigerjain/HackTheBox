@@ -1,0 +1,14 @@
+# Nmap 7.70 scan initiated Thu May  9 01:42:40 2019 as: nmap -vv --reason -Pn -sV -p 110 --script=(pop3* or ssl*) and not (brute or broadcast or dos or external or fuzzer) -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_110_pop3_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_110_pop3_nmap.xml 10.10.10.7
+Nmap scan report for 10.10.10.7
+Host is up, received user-set (0.021s latency).
+Scanned at 2019-05-09 01:42:41 EDT for 145s
+
+PORT    STATE SERVICE REASON         VERSION
+110/tcp open  pop3    syn-ack ttl 63 Cyrus pop3d 2.3.7-Invoca-RPM-2.3.7-7.el5_6.4
+|_pop3-capabilities: STLS LOGIN-DELAY(0) UIDL USER TOP PIPELINING EXPIRE(NEVER) APOP AUTH-RESP-CODE RESP-CODES IMPLEMENTATION(Cyrus POP3 server v2)
+|_sslv2-drown: 
+Service Info: Host: example.com
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu May  9 01:45:06 2019 -- 1 IP address (1 host up) scanned in 146.32 seconds

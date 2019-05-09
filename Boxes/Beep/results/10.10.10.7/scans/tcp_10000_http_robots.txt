@@ -1,0 +1,8 @@
+HTTP/1.0 200 Bad Request
+Server: MiniServ/1.570
+Date: Thu, 9 May 2019 02:39:40 GMT
+Content-type: text/html; Charset=iso-8859-1
+Connection: close
+
+<h1>Error - Bad Request</h1>
+<pre>This web server is running in SSL mode. Try the URL <a href='https://10.10.10.7:10000/'>https://10.10.10.7:10000/</a> instead.<br></pre>

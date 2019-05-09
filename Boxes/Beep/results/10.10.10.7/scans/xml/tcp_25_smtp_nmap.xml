@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu May  9 01:42:40 2019 as: nmap -vv -&#45;reason -Pn -sV -p 25 &quot;-&#45;script=(smtp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_25_smtp_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_25_smtp_nmap.xml 10.10.10.7 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 25 &quot;-&#45;script=(smtp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_25_smtp_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_25_smtp_nmap.xml 10.10.10.7" start="1557380560" startstr="Thu May  9 01:42:40 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="25"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1557380561"/>
+<taskend task="NSE" time="1557380561"/>
+<taskbegin task="NSE" time="1557380561"/>
+<taskend task="NSE" time="1557380561"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1557380561"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1557380561"/>
+<taskbegin task="SYN Stealth Scan" time="1557380561"/>
+<taskend task="SYN Stealth Scan" time="1557380561" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1557380561"/>
+<taskend task="Service scan" time="1557380571" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1557380571"/>
+<taskprogress task="NSE" time="1557380602" percent="86.89" remaining="5" etc="1557380607"/>
+<taskprogress task="NSE" time="1557380632" percent="93.44" remaining="5" etc="1557380636"/>
+<taskprogress task="NSE" time="1557380662" percent="96.72" remaining="4" etc="1557380665"/>
+<taskend task="NSE" time="1557380671"/>
+<taskbegin task="NSE" time="1557380671"/>
+<taskprogress task="NSE" time="1557380702" percent="66.67" remaining="16" etc="1557380717"/>
+<taskend task="NSE" time="1557380706"/>
+<host starttime="1557380561" endtime="1557380706"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="smtp" product="Postfix smtpd" hostname=" beep.localdomain" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-commands" output="beep.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, ENHANCEDSTATUSCODES, 8BITMIME, DSN, "/><script id="smtp-vuln-cve2010-4344" output="&#xa;  The SMTP server is not Exim: NOT VULNERABLE&#xa;"/><script id="sslv2-drown" output="&#xa;"></script></port>
+</ports>
+<times srtt="20302" rttvar="20302" to="101510"/>
+</host>
+<taskbegin task="NSE" time="1557380706"/>
+<taskend task="NSE" time="1557380706"/>
+<taskbegin task="NSE" time="1557380706"/>
+<taskend task="NSE" time="1557380706"/>
+<runstats><finished time="1557380706" timestr="Thu May  9 01:45:06 2019" elapsed="146.58" summary="Nmap done at Thu May  9 01:45:06 2019; 1 IP address (1 host up) scanned in 146.58 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

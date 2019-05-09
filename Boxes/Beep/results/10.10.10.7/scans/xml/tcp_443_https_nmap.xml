@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu May  9 01:42:52 2019 as: nmap -vv -&#45;reason -Pn -sV -p 443 &quot;-&#45;script=(http* or ssl*) and not (broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_443_http_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_443_https_nmap.xml 10.10.10.7 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 443 &quot;-&#45;script=(http* or ssl*) and not (broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_443_http_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_443_https_nmap.xml 10.10.10.7" start="1557380572" startstr="Thu May  9 01:42:52 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="443"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1557380574"/>
+<taskend task="NSE" time="1557380574"/>
+<taskbegin task="NSE" time="1557380574"/>
+<taskend task="NSE" time="1557380574"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1557380574"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1557380574"/>
+<taskbegin task="SYN Stealth Scan" time="1557380574"/>
+<taskend task="SYN Stealth Scan" time="1557380574" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1557380574"/>
+<taskend task="Service scan" time="1557380587" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1557380587"/>
+<taskprogress task="NSE" time="1557380618" percent="84.69" remaining="6" etc="1557380624"/>
+<taskprogress task="NSE" time="1557380648" percent="98.76" remaining="1" etc="1557380649"/>
+<taskprogress task="NSE" time="1557380678" percent="99.07" remaining="1" etc="1557380679"/>
+<taskprogress task="NSE" time="1557380708" percent="99.07" remaining="2" etc="1557380709"/>
+<taskprogress task="NSE" time="1557380738" percent="99.07" remaining="2" etc="1557380739"/>
+<taskprogress task="NSE" time="1557380768" percent="99.69" remaining="1" etc="1557380769"/>
+<taskprogress task="NSE" time="1557380798" percent="99.69" remaining="1" etc="1557380799"/>
+<taskprogress task="NSE" time="1557380828" percent="99.69" remaining="1" etc="1557380829"/>
+<taskprogress task="NSE" time="1557380858" percent="99.69" remaining="1" etc="1557380859"/>
+<taskprogress task="NSE" time="1557380888" percent="99.69" remaining="1" etc="1557380889"/>
+<taskprogress task="NSE" time="1557380918" percent="99.69" remaining="2" etc="1557380919"/>
+<taskprogress task="NSE" time="1557380948" percent="99.69" remaining="2" etc="1557380949"/>
+<taskprogress task="NSE" time="1557380978" percent="99.69" remaining="2" etc="1557380979"/>
+<taskprogress task="NSE" time="1557381008" percent="99.69" remaining="2" etc="1557381009"/>
+<taskprogress task="NSE" time="1557381038" percent="99.69" remaining="2" etc="1557381039"/>
+<taskprogress task="NSE" time="1557381068" percent="99.69" remaining="2" etc="1557381069"/>
+<taskprogress task="NSE" time="1557381098" percent="99.69" remaining="2" etc="1557381100"/>
+<taskprogress task="NSE" time="1557381128" percent="99.69" remaining="2" etc="1557381130"/>
+<taskprogress task="NSE" time="1557381158" percent="99.69" remaining="2" etc="1557381160"/>
+<taskprogress task="NSE" time="1557381188" percent="99.69" remaining="2" etc="1557381190"/>
+<taskprogress task="NSE" time="1557381218" percent="99.69" remaining="2" etc="1557381220"/>
+<taskprogress task="NSE" time="1557381248" percent="99.69" remaining="3" etc="1557381250"/>
+<taskprogress task="NSE" time="1557381278" percent="99.69" remaining="3" etc="1557381280"/>
+<taskprogress task="NSE" time="1557381308" percent="99.69" remaining="3" etc="1557381310"/>
+<taskprogress task="NSE" time="1557381338" percent="99.69" remaining="3" etc="1557381340"/>
+<taskprogress task="NSE" time="1557381368" percent="99.69" remaining="3" etc="1557381370"/>
+<taskprogress task="NSE" time="1557381398" percent="99.69" remaining="3" etc="1557381401"/>
+<taskprogress task="NSE" time="1557381428" percent="99.69" remaining="3" etc="1557381431"/>
+<taskprogress task="NSE" time="1557381458" percent="99.69" remaining="3" etc="1557381461"/>
+<taskprogress task="NSE" time="1557381488" percent="99.69" remaining="3" etc="1557381491"/>
+<taskprogress task="NSE" time="1557381518" percent="99.69" remaining="3" etc="1557381521"/>
+<taskprogress task="NSE" time="1557381548" percent="99.69" remaining="3" etc="1557381551"/>
+<taskprogress task="NSE" time="1557381578" percent="99.69" remaining="4" etc="1557381581"/>
+<taskprogress task="NSE" time="1557381608" percent="99.69" remaining="4" etc="1557381611"/>
+<taskprogress task="NSE" time="1557381638" percent="99.69" remaining="4" etc="1557381641"/>
+<taskprogress task="NSE" time="1557381668" percent="99.69" remaining="4" etc="1557381671"/>
+<taskprogress task="NSE" time="1557381698" percent="99.69" remaining="4" etc="1557381701"/>
+<taskprogress task="NSE" time="1557381728" percent="99.69" remaining="4" etc="1557381732"/>
+<taskprogress task="NSE" time="1557381758" percent="99.69" remaining="4" etc="1557381762"/>
+<taskprogress task="NSE" time="1557381788" percent="99.69" remaining="4" etc="1557381792"/>
+<taskprogress task="NSE" time="1557381818" percent="99.69" remaining="4" etc="1557381822"/>
+<taskprogress task="NSE" time="1557381848" percent="99.69" remaining="4" etc="1557381852"/>
+<taskprogress task="NSE" time="1557381878" percent="99.69" remaining="5" etc="1557381882"/>
+<taskprogress task="NSE" time="1557381908" percent="99.69" remaining="5" etc="1557381912"/>
+<taskprogress task="NSE" time="1557381938" percent="99.69" remaining="5" etc="1557381942"/>
+<taskprogress task="NSE" time="1557381968" percent="99.69" remaining="5" etc="1557381972"/>
+<taskprogress task="NSE" time="1557381998" percent="99.69" remaining="5" etc="1557382002"/>
+<taskprogress task="NSE" time="1557382028" percent="99.69" remaining="5" etc="1557382032"/>
+<taskprogress task="NSE" time="1557382058" percent="99.69" remaining="5" etc="1557382063"/>
+<taskprogress task="NSE" time="1557382088" percent="99.69" remaining="5" etc="1557382093"/>
+<taskprogress task="NSE" time="1557382118" percent="99.69" remaining="5" etc="1557382123"/>
+<taskprogress task="NSE" time="1557382148" percent="99.69" remaining="5" etc="1557382153"/>
+<taskprogress task="NSE" time="1557382178" percent="99.69" remaining="5" etc="1557382183"/>
+<taskprogress task="NSE" time="1557382208" percent="99.69" remaining="6" etc="1557382213"/>
+<taskprogress task="NSE" time="1557382238" percent="99.69" remaining="6" etc="1557382243"/>
+<taskprogress task="NSE" time="1557382268" percent="99.69" remaining="6" etc="1557382273"/>
+<taskprogress task="NSE" time="1557382298" percent="99.69" remaining="6" etc="1557382303"/>
+<taskprogress task="NSE" time="1557382328" percent="99.69" remaining="6" etc="1557382333"/>
+<taskprogress task="NSE" time="1557382358" percent="99.69" remaining="6" etc="1557382364"/>
+<taskprogress task="NSE" time="1557382388" percent="99.69" remaining="6" etc="1557382394"/>
+<taskprogress task="NSE" time="1557382418" percent="99.69" remaining="6" etc="1557382424"/>
+<taskprogress task="NSE" time="1557382448" percent="99.69" remaining="6" etc="1557382454"/>
+<taskprogress task="NSE" time="1557382478" percent="99.69" remaining="6" etc="1557382484"/>
+<taskprogress task="NSE" time="1557382508" percent="99.69" remaining="6" etc="1557382514"/>
+<taskprogress task="NSE" time="1557382538" percent="99.69" remaining="7" etc="1557382544"/>
+<taskprogress task="NSE" time="1557382568" percent="99.69" remaining="7" etc="1557382574"/>
+<taskprogress task="NSE" time="1557382598" percent="99.69" remaining="7" etc="1557382604"/>
+<taskprogress task="NSE" time="1557382628" percent="99.69" remaining="7" etc="1557382634"/>
+<taskprogress task="NSE" time="1557382658" percent="99.69" remaining="7" etc="1557382664"/>
+<taskprogress task="NSE" time="1557382688" percent="99.69" remaining="7" etc="1557382695"/>
+<taskprogress task="NSE" time="1557382718" percent="99.69" remaining="7" etc="1557382725"/>
+<taskprogress task="NSE" time="1557382748" percent="99.69" remaining="7" etc="1557382755"/>
+<taskprogress task="NSE" time="1557382778" percent="99.69" remaining="7" etc="1557382785"/>
+<taskprogress task="NSE" time="1557382808" percent="99.69" remaining="7" etc="1557382815"/>
+<taskprogress task="NSE" time="1557382838" percent="99.69" remaining="7" etc="1557382845"/>
+<taskprogress task="NSE" time="1557382868" percent="99.69" remaining="8" etc="1557382875"/>
+<taskprogress task="NSE" time="1557382898" percent="99.69" remaining="8" etc="1557382905"/>
+<taskprogress task="NSE" time="1557414510" percent="99.69" remaining="106" etc="1557414615"/>
+<taskprogress task="NSE" time="1557414540" percent="99.69" remaining="106" etc="1557414645"/>
+<taskprogress task="NSE" time="1557414570" percent="99.69" remaining="106" etc="1557414676"/>
+<taskprogress task="NSE" time="1557414600" percent="99.69" remaining="106" etc="1557414706"/>
+<taskprogress task="NSE" time="1557414630" percent="99.69" remaining="106" etc="1557414736"/>
+<taskprogress task="NSE" time="1557414660" percent="99.69" remaining="106" etc="1557414766"/>
+<taskprogress task="NSE" time="1557414690" percent="99.69" remaining="106" etc="1557414796"/>
+<taskprogress task="NSE" time="1557414720" percent="99.69" remaining="107" etc="1557414826"/>
+<taskprogress task="NSE" time="1557414750" percent="99.69" remaining="107" etc="1557414856"/>
+<taskprogress task="NSE" time="1557414780" percent="99.69" remaining="107" etc="1557414886"/>
+<taskprogress task="NSE" time="1557414810" percent="99.69" remaining="107" etc="1557414916"/>
+<taskprogress task="NSE" time="1557414840" percent="99.69" remaining="107" etc="1557414946"/>
+<taskprogress task="NSE" time="1557414870" percent="99.69" remaining="107" etc="1557414976"/>
+<taskprogress task="NSE" time="1557414900" percent="99.69" remaining="107" etc="1557415007"/>
+<taskprogress task="NSE" time="1557414930" percent="99.69" remaining="107" etc="1557415037"/>
+<taskprogress task="NSE" time="1557414960" percent="99.69" remaining="107" etc="1557415067"/>
+<taskprogress task="NSE" time="1557414990" percent="99.69" remaining="107" etc="1557415097"/>
+<taskprogress task="NSE" time="1557415020" percent="99.69" remaining="107" etc="1557415127"/>
+<taskprogress task="NSE" time="1557415050" percent="99.69" remaining="108" etc="1557415157"/>
+<taskprogress task="NSE" time="1557415080" percent="99.69" remaining="108" etc="1557415187"/>
+<taskprogress task="NSE" time="1557415110" percent="99.69" remaining="108" etc="1557415217"/>
+<taskprogress task="NSE" time="1557415140" percent="99.69" remaining="108" etc="1557415247"/>
+<taskprogress task="NSE" time="1557415170" percent="99.69" remaining="108" etc="1557415277"/>
+<taskprogress task="NSE" time="1557415200" percent="99.69" remaining="108" etc="1557415307"/>
+<taskprogress task="NSE" time="1557415230" percent="99.69" remaining="108" etc="1557415338"/>
+<taskprogress task="NSE" time="1557415260" percent="99.69" remaining="108" etc="1557415368"/>
+<taskprogress task="NSE" time="1557415290" percent="99.69" remaining="108" etc="1557415398"/>
+<taskprogress task="NSE" time="1557415320" percent="99.69" remaining="108" etc="1557415428"/>
+<taskprogress task="NSE" time="1557415350" percent="99.69" remaining="108" etc="1557415458"/>
+<taskprogress task="NSE" time="1557415380" percent="99.69" remaining="109" etc="1557415488"/>
+<taskprogress task="NSE" time="1557415410" percent="99.69" remaining="109" etc="1557415518"/>
+<taskprogress task="NSE" time="1557415440" percent="99.69" remaining="109" etc="1557415548"/>
+<taskprogress task="NSE" time="1557415470" percent="99.69" remaining="109" etc="1557415578"/>
+<taskprogress task="NSE" time="1557415500" percent="99.69" remaining="109" etc="1557415608"/>
+<taskprogress task="NSE" time="1557415530" percent="99.69" remaining="109" etc="1557415639"/>
+<taskprogress task="NSE" time="1557415560" percent="99.69" remaining="109" etc="1557415669"/>
+<taskprogress task="NSE" time="1557415590" percent="99.69" remaining="109" etc="1557415699"/>
+<taskprogress task="NSE" time="1557415620" percent="99.69" remaining="109" etc="1557415729"/>
+<taskprogress task="NSE" time="1557415650" percent="99.69" remaining="109" etc="1557415759"/>
+<taskprogress task="NSE" time="1557415680" percent="99.69" remaining="109" etc="1557415789"/>
+<taskprogress task="NSE" time="1557415710" percent="99.69" remaining="110" etc="1557415819"/>
+<taskprogress task="NSE" time="1557415740" percent="99.69" remaining="110" etc="1557415849"/>
+<taskprogress task="NSE" time="1557415770" percent="99.69" remaining="110" etc="1557415879"/>
+<taskprogress task="NSE" time="1557415800" percent="99.69" remaining="110" etc="1557415909"/>
+<taskprogress task="NSE" time="1557415830" percent="99.69" remaining="110" etc="1557415939"/>
+<taskprogress task="NSE" time="1557415860" percent="99.69" remaining="110" etc="1557415970"/>
+<taskprogress task="NSE" time="1557415890" percent="99.69" remaining="110" etc="1557416000"/>
+<taskprogress task="NSE" time="1557415920" percent="99.69" remaining="110" etc="1557416030"/>
+<taskprogress task="NSE" time="1557415950" percent="99.69" remaining="110" etc="1557416060"/>
+<taskprogress task="NSE" time="1557415980" percent="99.69" remaining="110" etc="1557416090"/>
+<taskprogress task="NSE" time="1557416010" percent="99.69" remaining="111" etc="1557416120"/>
+<taskprogress task="NSE" time="1557416040" percent="99.69" remaining="111" etc="1557416150"/>
+<taskprogress task="NSE" time="1557416070" percent="99.69" remaining="111" etc="1557416180"/>
+<taskprogress task="NSE" time="1557416100" percent="99.69" remaining="111" etc="1557416210"/>
+<taskprogress task="NSE" time="1557416130" percent="99.69" remaining="111" etc="1557416240"/>
+<taskprogress task="NSE" time="1557416160" percent="99.69" remaining="111" etc="1557416270"/>
+<taskprogress task="NSE" time="1557416190" percent="99.69" remaining="111" etc="1557416301"/>
+<taskprogress task="NSE" time="1557416220" percent="99.69" remaining="111" etc="1557416331"/>
+<taskprogress task="NSE" time="1557416250" percent="99.69" remaining="111" etc="1557416361"/>
+<taskprogress task="NSE" time="1557416280" percent="99.69" remaining="111" etc="1557416391"/>
+<taskprogress task="NSE" time="1557416310" percent="99.69" remaining="111" etc="1557416421"/>
+<taskprogress task="NSE" time="1557416340" percent="99.69" remaining="112" etc="1557416451"/>
+<taskprogress task="NSE" time="1557416370" percent="99.69" remaining="112" etc="1557416481"/>
+<taskprogress task="NSE" time="1557416400" percent="99.69" remaining="112" etc="1557416511"/>
+<taskprogress task="NSE" time="1557416430" percent="99.69" remaining="112" etc="1557416541"/>
+<taskprogress task="NSE" time="1557416460" percent="99.69" remaining="112" etc="1557416571"/>
+<taskprogress task="NSE" time="1557416490" percent="99.69" remaining="112" etc="1557416602"/>
+<taskprogress task="NSE" time="1557416520" percent="99.69" remaining="112" etc="1557416632"/>
+<taskprogress task="NSE" time="1557416550" percent="99.69" remaining="112" etc="1557416662"/>
+<taskprogress task="NSE" time="1557416580" percent="99.69" remaining="112" etc="1557416692"/>
+<taskprogress task="NSE" time="1557416610" percent="99.69" remaining="112" etc="1557416722"/>
+<taskprogress task="NSE" time="1557416640" percent="99.69" remaining="112" etc="1557416752"/>
+<taskprogress task="NSE" time="1557416670" percent="99.69" remaining="113" etc="1557416782"/>
+<taskprogress task="NSE" time="1557416700" percent="99.69" remaining="113" etc="1557416812"/>
+<taskprogress task="NSE" time="1557416730" percent="99.69" remaining="113" etc="1557416842"/>
+<taskprogress task="NSE" time="1557416760" percent="99.69" remaining="113" etc="1557416872"/>
+<taskprogress task="NSE" time="1557416790" percent="99.69" remaining="113" etc="1557416902"/>
+<taskprogress task="NSE" time="1557416820" percent="99.69" remaining="113" etc="1557416933"/>
+<taskprogress task="NSE" time="1557416850" percent="99.69" remaining="113" etc="1557416963"/>
+<taskprogress task="NSE" time="1557416880" percent="99.69" remaining="113" etc="1557416993"/>
+<taskprogress task="NSE" time="1557416910" percent="99.69" remaining="113" etc="1557417023"/>
+<taskprogress task="NSE" time="1557416940" percent="99.69" remaining="113" etc="1557417053"/>
+<taskprogress task="NSE" time="1557416970" percent="99.69" remaining="113" etc="1557417083"/>
+<taskprogress task="NSE" time="1557417000" percent="99.69" remaining="114" etc="1557417113"/>
+<taskprogress task="NSE" time="1557417030" percent="99.69" remaining="114" etc="1557417143"/>
+<taskprogress task="NSE" time="1557417060" percent="99.69" remaining="114" etc="1557417173"/>
+<taskprogress task="NSE" time="1557417090" percent="99.69" remaining="114" etc="1557417203"/>
+<taskprogress task="NSE" time="1557417120" percent="99.69" remaining="114" etc="1557417233"/>
+<taskprogress task="NSE" time="1557417150" percent="99.69" remaining="114" etc="1557417264"/>
+<taskprogress task="NSE" time="1557417180" percent="99.69" remaining="114" etc="1557417294"/>
+<taskprogress task="NSE" time="1557417210" percent="99.69" remaining="114" etc="1557417324"/>
+<taskprogress task="NSE" time="1557417240" percent="99.69" remaining="114" etc="1557417354"/>
+<taskprogress task="NSE" time="1557417270" percent="99.69" remaining="114" etc="1557417384"/>
+<taskprogress task="NSE" time="1557417300" percent="99.69" remaining="115" etc="1557417414"/>
+<taskprogress task="NSE" time="1557417330" percent="99.69" remaining="115" etc="1557417444"/>
+<taskprogress task="NSE" time="1557417360" percent="99.69" remaining="115" etc="1557417474"/>
+<taskprogress task="NSE" time="1557417390" percent="99.69" remaining="115" etc="1557417504"/>
+<taskprogress task="NSE" time="1557417420" percent="99.69" remaining="115" etc="1557417534"/>
+<taskprogress task="NSE" time="1557417450" percent="99.69" remaining="115" etc="1557417564"/>
+<taskprogress task="NSE" time="1557417480" percent="99.69" remaining="115" etc="1557417595"/>
+<taskprogress task="NSE" time="1557417510" percent="99.69" remaining="115" etc="1557417625"/>
+<taskprogress task="NSE" time="1557417540" percent="99.69" remaining="115" etc="1557417655"/>
+<taskprogress task="NSE" time="1557417570" percent="99.69" remaining="115" etc="1557417685"/>
+<taskprogress task="NSE" time="1557417600" percent="99.69" remaining="115" etc="1557417715"/>
+<taskprogress task="NSE" time="1557417630" percent="99.69" remaining="116" etc="1557417745"/>
+<taskprogress task="NSE" time="1557417660" percent="99.69" remaining="116" etc="1557417775"/>
+<taskprogress task="NSE" time="1557417690" percent="99.69" remaining="116" etc="1557417805"/>
+<taskprogress task="NSE" time="1557417720" percent="99.69" remaining="116" etc="1557417835"/>
+<taskprogress task="NSE" time="1557417750" percent="99.69" remaining="116" etc="1557417865"/>
+<taskprogress task="NSE" time="1557417780" percent="99.69" remaining="116" etc="1557417896"/>
+<taskprogress task="NSE" time="1557417810" percent="99.69" remaining="116" etc="1557417926"/>
+<taskprogress task="NSE" time="1557417840" percent="99.69" remaining="116" etc="1557417956"/>
+<taskprogress task="NSE" time="1557417870" percent="99.69" remaining="116" etc="1557417986"/>
+<taskprogress task="NSE" time="1557417900" percent="99.69" remaining="116" etc="1557418016"/>
+<taskprogress task="NSE" time="1557417930" percent="99.69" remaining="116" etc="1557418046"/>
+<taskprogress task="NSE" time="1557417960" percent="99.69" remaining="117" etc="1557418076"/>
+<taskprogress task="NSE" time="1557417990" percent="99.69" remaining="117" etc="1557418106"/>
+<taskprogress task="NSE" time="1557418020" percent="99.69" remaining="117" etc="1557418136"/>
+<taskprogress task="NSE" time="1557418050" percent="99.69" remaining="117" etc="1557418166"/>
+<taskprogress task="NSE" time="1557418080" percent="99.69" remaining="117" etc="1557418196"/>
+<taskprogress task="NSE" time="1557418110" percent="99.69" remaining="117" etc="1557418227"/>
+<taskprogress task="NSE" time="1557418140" percent="99.69" remaining="117" etc="1557418257"/>
+<taskprogress task="NSE" time="1557418170" percent="99.69" remaining="117" etc="1557418287"/>
+<taskprogress task="NSE" time="1557418200" percent="99.69" remaining="117" etc="1557418317"/>
+<taskprogress task="NSE" time="1557418230" percent="99.69" remaining="117" etc="1557418347"/>
+<taskprogress task="NSE" time="1557418260" percent="99.69" remaining="117" etc="1557418377"/>
+<taskprogress task="NSE" time="1557418290" percent="99.69" remaining="118" etc="1557418407"/>
+<taskprogress task="NSE" time="1557418320" percent="99.69" remaining="118" etc="1557418437"/>
+<taskprogress task="NSE" time="1557418350" percent="99.69" remaining="118" etc="1557418467"/>
+<taskprogress task="NSE" time="1557418380" percent="99.69" remaining="118" etc="1557418497"/>
+<taskprogress task="NSE" time="1557418410" percent="99.69" remaining="118" etc="1557418527"/>
+<taskprogress task="NSE" time="1557418440" percent="99.69" remaining="118" etc="1557418558"/>
+<taskprogress task="NSE" time="1557418470" percent="99.69" remaining="118" etc="1557418588"/>
+<taskprogress task="NSE" time="1557418500" percent="99.69" remaining="118" etc="1557418618"/>
+<taskprogress task="NSE" time="1557418530" percent="99.69" remaining="118" etc="1557418648"/>
+<taskprogress task="NSE" time="1557418560" percent="99.69" remaining="118" etc="1557418678"/>
+<taskprogress task="NSE" time="1557418590" percent="99.69" remaining="119" etc="1557418708"/>
+<taskprogress task="NSE" time="1557418620" percent="99.69" remaining="119" etc="1557418738"/>
+<taskprogress task="NSE" time="1557418650" percent="99.69" remaining="119" etc="1557418768"/>
+<taskprogress task="NSE" time="1557418680" percent="99.69" remaining="119" etc="1557418798"/>
+<taskprogress task="NSE" time="1557418710" percent="99.69" remaining="119" etc="1557418828"/>
+<taskprogress task="NSE" time="1557418740" percent="99.69" remaining="119" etc="1557418858"/>
+<taskprogress task="NSE" time="1557418770" percent="99.69" remaining="119" etc="1557418889"/>
+<taskprogress task="NSE" time="1557418800" percent="99.69" remaining="119" etc="1557418919"/>
+<taskprogress task="NSE" time="1557418830" percent="99.69" remaining="119" etc="1557418949"/>
+<taskprogress task="NSE" time="1557418860" percent="99.69" remaining="119" etc="1557418979"/>
+<taskprogress task="NSE" time="1557418890" percent="99.69" remaining="119" etc="1557419009"/>
+<taskprogress task="NSE" time="1557418920" percent="99.69" remaining="120" etc="1557419039"/>
+<taskprogress task="NSE" time="1557418950" percent="99.69" remaining="120" etc="1557419069"/>
+<taskprogress task="NSE" time="1557418980" percent="99.69" remaining="120" etc="1557419099"/>
+<taskprogress task="NSE" time="1557419010" percent="99.69" remaining="120" etc="1557419129"/>
+<taskprogress task="NSE" time="1557419040" percent="99.69" remaining="120" etc="1557419159"/>
+<taskprogress task="NSE" time="1557419070" percent="99.69" remaining="120" etc="1557419190"/>
+<taskprogress task="NSE" time="1557419100" percent="99.69" remaining="120" etc="1557419220"/>
+<taskprogress task="NSE" time="1557419130" percent="99.69" remaining="120" etc="1557419250"/>
+<taskprogress task="NSE" time="1557419160" percent="99.69" remaining="120" etc="1557419280"/>
+<taskprogress task="NSE" time="1557419190" percent="99.69" remaining="120" etc="1557419310"/>
+<taskprogress task="NSE" time="1557419220" percent="99.69" remaining="120" etc="1557419340"/>
+<taskprogress task="NSE" time="1557419250" percent="99.69" remaining="121" etc="1557419370"/>
+<taskprogress task="NSE" time="1557419280" percent="99.69" remaining="121" etc="1557419400"/>
+<taskprogress task="NSE" time="1557419310" percent="99.69" remaining="121" etc="1557419430"/>
+<taskprogress task="NSE" time="1557419340" percent="99.69" remaining="121" etc="1557419460"/>
+<taskprogress task="NSE" time="1557419370" percent="99.69" remaining="121" etc="1557419490"/>
+<taskprogress task="NSE" time="1557419400" percent="99.69" remaining="121" etc="1557419521"/>
+<taskprogress task="NSE" time="1557419430" percent="99.69" remaining="121" etc="1557419551"/>
+<taskprogress task="NSE" time="1557419460" percent="99.69" remaining="121" etc="1557419581"/>
+<taskprogress task="NSE" time="1557419490" percent="99.69" remaining="121" etc="1557419611"/>
+<taskprogress task="NSE" time="1557419520" percent="99.69" remaining="121" etc="1557419641"/>
+<taskprogress task="NSE" time="1557419550" percent="99.69" remaining="122" etc="1557419671"/>
+<taskprogress task="NSE" time="1557419580" percent="99.69" remaining="122" etc="1557419701"/>
+<taskprogress task="NSE" time="1557419610" percent="99.69" remaining="122" etc="1557419731"/>
+<taskprogress task="NSE" time="1557419640" percent="99.69" remaining="122" etc="1557419761"/>
+<taskprogress task="NSE" time="1557419670" percent="99.69" remaining="122" etc="1557419791"/>
+<taskprogress task="NSE" time="1557419700" percent="99.69" remaining="122" etc="1557419821"/>
+<taskprogress task="NSE" time="1557419730" percent="99.69" remaining="122" etc="1557419852"/>
+<taskprogress task="NSE" time="1557419760" percent="99.69" remaining="122" etc="1557419882"/>
+<taskprogress task="NSE" time="1557419790" percent="99.69" remaining="122" etc="1557419912"/>
+<taskprogress task="NSE" time="1557419820" percent="99.69" remaining="122" etc="1557419942"/>
+<taskprogress task="NSE" time="1557419850" percent="99.69" remaining="122" etc="1557419972"/>
+<taskprogress task="NSE" time="1557419880" percent="99.69" remaining="123" etc="1557420002"/>
+<taskprogress task="NSE" time="1557419910" percent="99.69" remaining="123" etc="1557420032"/>
+<taskprogress task="NSE" time="1557419940" percent="99.69" remaining="123" etc="1557420062"/>
+<taskprogress task="NSE" time="1557419970" percent="99.69" remaining="123" etc="1557420092"/>
+<taskprogress task="NSE" time="1557420000" percent="99.69" remaining="123" etc="1557420122"/>
+<taskprogress task="NSE" time="1557420030" percent="99.69" remaining="123" etc="1557420152"/>
+<taskprogress task="NSE" time="1557420060" percent="99.69" remaining="123" etc="1557420183"/>
+<taskprogress task="NSE" time="1557420090" percent="99.69" remaining="123" etc="1557420213"/>
+<taskprogress task="NSE" time="1557420120" percent="99.69" remaining="123" etc="1557420243"/>
+<taskprogress task="NSE" time="1557420150" percent="99.69" remaining="123" etc="1557420273"/>
+<taskprogress task="NSE" time="1557420180" percent="99.69" remaining="123" etc="1557420303"/>
+<taskprogress task="NSE" time="1557420210" percent="99.69" remaining="124" etc="1557420333"/>
+<taskprogress task="NSE" time="1557420240" percent="99.69" remaining="124" etc="1557420363"/>
+<taskprogress task="NSE" time="1557420270" percent="99.69" remaining="124" etc="1557420393"/>
+<taskprogress task="NSE" time="1557420300" percent="99.69" remaining="124" etc="1557420423"/>
+<taskprogress task="NSE" time="1557420330" percent="99.69" remaining="124" etc="1557420453"/>
+<taskprogress task="NSE" time="1557420360" percent="99.69" remaining="124" etc="1557420484"/>
+<taskprogress task="NSE" time="1557420390" percent="99.69" remaining="124" etc="1557420514"/>
+<taskprogress task="NSE" time="1557420420" percent="99.69" remaining="124" etc="1557420544"/>
+<taskprogress task="NSE" time="1557420450" percent="99.69" remaining="124" etc="1557420574"/>
+<taskprogress task="NSE" time="1557420480" percent="99.69" remaining="124" etc="1557420604"/>
+<taskprogress task="NSE" time="1557420510" percent="99.69" remaining="124" etc="1557420634"/>
+<taskprogress task="NSE" time="1557420540" percent="99.69" remaining="125" etc="1557420664"/>
+<taskprogress task="NSE" time="1557420570" percent="99.69" remaining="125" etc="1557420694"/>
+<taskprogress task="NSE" time="1557420600" percent="99.69" remaining="125" etc="1557420724"/>
+<taskprogress task="NSE" time="1557420630" percent="99.69" remaining="125" etc="1557420754"/>
+<taskprogress task="NSE" time="1557420660" percent="99.69" remaining="125" etc="1557420784"/>
+<taskprogress task="NSE" time="1557420690" percent="99.69" remaining="125" etc="1557420815"/>
+<taskprogress task="NSE" time="1557420720" percent="99.69" remaining="125" etc="1557420845"/>
+<taskprogress task="NSE" time="1557420750" percent="99.69" remaining="125" etc="1557420875"/>
+<taskprogress task="NSE" time="1557420780" percent="99.69" remaining="125" etc="1557420905"/>
+<taskprogress task="NSE" time="1557420810" percent="99.69" remaining="125" etc="1557420935"/>
+<taskprogress task="NSE" time="1557420840" percent="99.69" remaining="126" etc="1557420965"/>
+<taskprogress task="NSE" time="1557420870" percent="99.69" remaining="126" etc="1557420995"/>
+<taskprogress task="NSE" time="1557420900" percent="99.69" remaining="126" etc="1557421025"/>
+<taskprogress task="NSE" time="1557420930" percent="99.69" remaining="126" etc="1557421055"/>
+<taskprogress task="NSE" time="1557420960" percent="99.69" remaining="126" etc="1557421085"/>
+<taskprogress task="NSE" time="1557420990" percent="99.69" remaining="126" etc="1557421115"/>
+<taskprogress task="NSE" time="1557421020" percent="99.69" remaining="126" etc="1557421146"/>
+<taskprogress task="NSE" time="1557421050" percent="99.69" remaining="126" etc="1557421176"/>
+<taskprogress task="NSE" time="1557421080" percent="99.69" remaining="126" etc="1557421206"/>
+<taskprogress task="NSE" time="1557421110" percent="99.69" remaining="126" etc="1557421236"/>
+<taskprogress task="NSE" time="1557421140" percent="99.69" remaining="126" etc="1557421266"/>
+<taskprogress task="NSE" time="1557421170" percent="99.69" remaining="127" etc="1557421296"/>
+<taskprogress task="NSE" time="1557421200" percent="99.69" remaining="127" etc="1557421326"/>
+<taskprogress task="NSE" time="1557421230" percent="99.69" remaining="127" etc="1557421356"/>
+<taskprogress task="NSE" time="1557421260" percent="99.69" remaining="127" etc="1557421386"/>
+<taskprogress task="NSE" time="1557421290" percent="99.69" remaining="127" etc="1557421416"/>
+<taskprogress task="NSE" time="1557421320" percent="99.69" remaining="127" etc="1557421447"/>
+<taskprogress task="NSE" time="1557421350" percent="99.69" remaining="127" etc="1557421477"/>
+<taskprogress task="NSE" time="1557421380" percent="99.69" remaining="127" etc="1557421507"/>
+<taskprogress task="NSE" time="1557421410" percent="99.69" remaining="127" etc="1557421537"/>
+<taskprogress task="NSE" time="1557421440" percent="99.69" remaining="127" etc="1557421567"/>
+<taskprogress task="NSE" time="1557421470" percent="99.69" remaining="127" etc="1557421597"/>
+<taskprogress task="NSE" time="1557421500" percent="99.69" remaining="128" etc="1557421627"/>
+<taskprogress task="NSE" time="1557421530" percent="99.69" remaining="128" etc="1557421657"/>
+<taskprogress task="NSE" time="1557421560" percent="99.69" remaining="128" etc="1557421687"/>
+<taskprogress task="NSE" time="1557421590" percent="99.69" remaining="128" etc="1557421717"/>
+<taskprogress task="NSE" time="1557421620" percent="99.69" remaining="128" etc="1557421747"/>
+<taskprogress task="NSE" time="1557421650" percent="99.69" remaining="128" etc="1557421778"/>
+<taskprogress task="NSE" time="1557421680" percent="99.69" remaining="128" etc="1557421808"/>
+<taskprogress task="NSE" time="1557421710" percent="99.69" remaining="128" etc="1557421838"/>
+<taskprogress task="NSE" time="1557421740" percent="99.69" remaining="128" etc="1557421868"/>
+<taskprogress task="NSE" time="1557421770" percent="99.69" remaining="128" etc="1557421898"/>
+<taskprogress task="NSE" time="1557421800" percent="99.69" remaining="128" etc="1557421928"/>
+<taskprogress task="NSE" time="1557421830" percent="99.69" remaining="129" etc="1557421958"/>
+<taskprogress task="NSE" time="1557421860" percent="99.69" remaining="129" etc="1557421988"/>
+<taskprogress task="NSE" time="1557421890" percent="99.69" remaining="129" etc="1557422018"/>
+<taskprogress task="NSE" time="1557421920" percent="99.69" remaining="129" etc="1557422048"/>
+<taskprogress task="NSE" time="1557421950" percent="99.69" remaining="129" etc="1557422078"/>
+<taskprogress task="NSE" time="1557421980" percent="99.69" remaining="129" etc="1557422109"/>
+<taskprogress task="NSE" time="1557422010" percent="99.69" remaining="129" etc="1557422139"/>
+<taskprogress task="NSE" time="1557422040" percent="99.69" remaining="129" etc="1557422169"/>
+<taskprogress task="NSE" time="1557422070" percent="99.69" remaining="129" etc="1557422199"/>
+<taskprogress task="NSE" time="1557422100" percent="99.69" remaining="129" etc="1557422229"/>
+<taskprogress task="NSE" time="1557422130" percent="99.69" remaining="130" etc="1557422259"/>
+<taskprogress task="NSE" time="1557422160" percent="99.69" remaining="130" etc="1557422289"/>
+<taskprogress task="NSE" time="1557422190" percent="99.69" remaining="130" etc="1557422319"/>
+<taskprogress task="NSE" time="1557422220" percent="99.69" remaining="130" etc="1557422349"/>
+<taskprogress task="NSE" time="1557422250" percent="99.69" remaining="130" etc="1557422379"/>
+<taskprogress task="NSE" time="1557422280" percent="99.69" remaining="130" etc="1557422409"/>
+<taskprogress task="NSE" time="1557422310" percent="99.69" remaining="130" etc="1557422440"/>
+<taskprogress task="NSE" time="1557422340" percent="99.69" remaining="130" etc="1557422470"/>
+<taskprogress task="NSE" time="1557422370" percent="99.69" remaining="130" etc="1557422500"/>
+<taskprogress task="NSE" time="1557422400" percent="99.69" remaining="130" etc="1557422530"/>
+<taskprogress task="NSE" time="1557422430" percent="99.69" remaining="130" etc="1557422560"/>
+<taskprogress task="NSE" time="1557422460" percent="99.69" remaining="131" etc="1557422590"/>
+<taskprogress task="NSE" time="1557422490" percent="99.69" remaining="131" etc="1557422620"/>
+<taskprogress task="NSE" time="1557422520" percent="99.69" remaining="131" etc="1557422650"/>
+<taskprogress task="NSE" time="1557422550" percent="99.69" remaining="131" etc="1557422680"/>
+<taskprogress task="NSE" time="1557422580" percent="99.69" remaining="131" etc="1557422710"/>
+<taskprogress task="NSE" time="1557422610" percent="99.69" remaining="131" etc="1557422741"/>
+<taskprogress task="NSE" time="1557422640" percent="99.69" remaining="131" etc="1557422771"/>
+<taskprogress task="NSE" time="1557422670" percent="99.69" remaining="131" etc="1557422801"/>
+<taskprogress task="NSE" time="1557422700" percent="99.69" remaining="131" etc="1557422831"/>
+<taskprogress task="NSE" time="1557422730" percent="99.69" remaining="131" etc="1557422861"/>
+<taskprogress task="NSE" time="1557422760" percent="99.69" remaining="131" etc="1557422891"/>
+<taskprogress task="NSE" time="1557422790" percent="99.69" remaining="132" etc="1557422921"/>
+<taskprogress task="NSE" time="1557422820" percent="99.69" remaining="132" etc="1557422951"/>
+<taskprogress task="NSE" time="1557422850" percent="99.69" remaining="132" etc="1557422981"/>
+<taskprogress task="NSE" time="1557422880" percent="99.69" remaining="132" etc="1557423011"/>
+<taskprogress task="NSE" time="1557422910" percent="99.69" remaining="132" etc="1557423041"/>
+<taskprogress task="NSE" time="1557422940" percent="99.69" remaining="132" etc="1557423072"/>
+<taskprogress task="NSE" time="1557422970" percent="99.69" remaining="132" etc="1557423102"/>
+<taskprogress task="NSE" time="1557423000" percent="99.69" remaining="132" etc="1557423132"/>
+<taskprogress task="NSE" time="1557423030" percent="99.69" remaining="132" etc="1557423162"/>
+<taskprogress task="NSE" time="1557423060" percent="99.69" remaining="132" etc="1557423192"/>
+<taskprogress task="NSE" time="1557423090" percent="99.69" remaining="132" etc="1557423222"/>
+<taskprogress task="NSE" time="1557423120" percent="99.69" remaining="133" etc="1557423252"/>
+<taskprogress task="NSE" time="1557423150" percent="99.69" remaining="133" etc="1557423282"/>
+<taskprogress task="NSE" time="1557423180" percent="99.69" remaining="133" etc="1557423312"/>
+<taskprogress task="NSE" time="1557423210" percent="99.69" remaining="133" etc="1557423342"/>
+<taskprogress task="NSE" time="1557423240" percent="99.69" remaining="133" etc="1557423372"/>
+<taskprogress task="NSE" time="1557423270" percent="99.69" remaining="133" etc="1557423403"/>
+<taskprogress task="NSE" time="1557423300" percent="99.69" remaining="133" etc="1557423433"/>
+<taskprogress task="NSE" time="1557423330" percent="99.69" remaining="133" etc="1557423463"/>
+<taskprogress task="NSE" time="1557423360" percent="99.69" remaining="133" etc="1557423493"/>
+<taskprogress task="NSE" time="1557423390" percent="99.69" remaining="133" etc="1557423523"/>
+<taskprogress task="NSE" time="1557423420" percent="99.69" remaining="134" etc="1557423553"/>
+<taskprogress task="NSE" time="1557423450" percent="99.69" remaining="134" etc="1557423583"/>
+<taskprogress task="NSE" time="1557423480" percent="99.69" remaining="134" etc="1557423613"/>
+<taskprogress task="NSE" time="1557423510" percent="99.69" remaining="134" etc="1557423643"/>
+<taskprogress task="NSE" time="1557423540" percent="99.69" remaining="134" etc="1557423673"/>
+<taskprogress task="NSE" time="1557423570" percent="99.69" remaining="134" etc="1557423703"/>
+<taskprogress task="NSE" time="1557423600" percent="99.69" remaining="134" etc="1557423734"/>
+<taskprogress task="NSE" time="1557423630" percent="99.69" remaining="134" etc="1557423764"/>
+<taskprogress task="NSE" time="1557423660" percent="99.69" remaining="134" etc="1557423794"/>
+<taskprogress task="NSE" time="1557423690" percent="99.69" remaining="134" etc="1557423824"/>
+<taskprogress task="NSE" time="1557423720" percent="99.69" remaining="134" etc="1557423854"/>
+<taskprogress task="NSE" time="1557423750" percent="99.69" remaining="135" etc="1557423884"/>
+<taskprogress task="NSE" time="1557423780" percent="99.69" remaining="135" etc="1557423914"/>
+<taskprogress task="NSE" time="1557423810" percent="99.69" remaining="135" etc="1557423944"/>
+<taskprogress task="NSE" time="1557423840" percent="99.69" remaining="135" etc="1557423974"/>
+<taskprogress task="NSE" time="1557423870" percent="99.69" remaining="135" etc="1557424004"/>
+<taskprogress task="NSE" time="1557423900" percent="99.69" remaining="135" etc="1557424035"/>
+<taskprogress task="NSE" time="1557423930" percent="99.69" remaining="135" etc="1557424065"/>
+<taskprogress task="NSE" time="1557423960" percent="99.69" remaining="135" etc="1557424095"/>
+<taskprogress task="NSE" time="1557423990" percent="99.69" remaining="135" etc="1557424125"/>
+<taskprogress task="NSE" time="1557424020" percent="99.69" remaining="135" etc="1557424155"/>
+<taskprogress task="NSE" time="1557424050" percent="99.69" remaining="135" etc="1557424185"/>
+<taskprogress task="NSE" time="1557424080" percent="99.69" remaining="136" etc="1557424215"/>
+<taskprogress task="NSE" time="1557424110" percent="99.69" remaining="136" etc="1557424245"/>
+<taskprogress task="NSE" time="1557424140" percent="99.69" remaining="136" etc="1557424275"/>
+<taskprogress task="NSE" time="1557424170" percent="99.69" remaining="136" etc="1557424305"/>
+<taskprogress task="NSE" time="1557424200" percent="99.69" remaining="136" etc="1557424335"/>
+<taskprogress task="NSE" time="1557424230" percent="99.69" remaining="136" etc="1557424366"/>
+<taskprogress task="NSE" time="1557424260" percent="99.69" remaining="136" etc="1557424396"/>
+<taskprogress task="NSE" time="1557424290" percent="99.69" remaining="136" etc="1557424426"/>
+<taskprogress task="NSE" time="1557424320" percent="99.69" remaining="136" etc="1557424456"/>
+<taskprogress task="NSE" time="1557424350" percent="99.69" remaining="136" etc="1557424486"/>
+<taskprogress task="NSE" time="1557424380" percent="99.69" remaining="137" etc="1557424516"/>
+<taskprogress task="NSE" time="1557424410" percent="99.69" remaining="137" etc="1557424546"/>
+<taskprogress task="NSE" time="1557424440" percent="99.69" remaining="137" etc="1557424576"/>
+<taskprogress task="NSE" time="1557424470" percent="99.69" remaining="137" etc="1557424606"/>
+<taskprogress task="NSE" time="1557424500" percent="99.69" remaining="137" etc="1557424636"/>
+<taskprogress task="NSE" time="1557424530" percent="99.69" remaining="137" etc="1557424666"/>
+<taskprogress task="NSE" time="1557424560" percent="99.69" remaining="137" etc="1557424697"/>
+<taskprogress task="NSE" time="1557424590" percent="99.69" remaining="137" etc="1557424727"/>
+<taskprogress task="NSE" time="1557424620" percent="99.69" remaining="137" etc="1557424757"/>
+<taskprogress task="NSE" time="1557424650" percent="99.69" remaining="137" etc="1557424787"/>
+<taskprogress task="NSE" time="1557424680" percent="99.69" remaining="137" etc="1557424817"/>
+<taskprogress task="NSE" time="1557424710" percent="99.69" remaining="138" etc="1557424847"/>
+<taskprogress task="NSE" time="1557424740" percent="99.69" remaining="138" etc="1557424877"/>
+<taskprogress task="NSE" time="1557424770" percent="99.69" remaining="138" etc="1557424907"/>
+<taskprogress task="NSE" time="1557424800" percent="99.69" remaining="138" etc="1557424937"/>
+<taskprogress task="NSE" time="1557424830" percent="99.69" remaining="138" etc="1557424967"/>
+<taskprogress task="NSE" time="1557424860" percent="99.69" remaining="138" etc="1557424997"/>
+<taskprogress task="NSE" time="1557424890" percent="99.69" remaining="138" etc="1557425028"/>
+<taskprogress task="NSE" time="1557424920" percent="99.69" remaining="138" etc="1557425058"/>
+<taskprogress task="NSE" time="1557424950" percent="99.69" remaining="138" etc="1557425088"/>
+<taskprogress task="NSE" time="1557424980" percent="99.69" remaining="138" etc="1557425118"/>
+<taskprogress task="NSE" time="1557425010" percent="99.69" remaining="138" etc="1557425148"/>
+<taskprogress task="NSE" time="1557425040" percent="99.69" remaining="139" etc="1557425178"/>
+<taskprogress task="NSE" time="1557425070" percent="99.69" remaining="139" etc="1557425208"/>
+<taskprogress task="NSE" time="1557425100" percent="99.69" remaining="139" etc="1557425238"/>
+<taskprogress task="NSE" time="1557425130" percent="99.69" remaining="139" etc="1557425268"/>
+<taskprogress task="NSE" time="1557425160" percent="99.69" remaining="139" etc="1557425298"/>
+<taskprogress task="NSE" time="1557425190" percent="99.69" remaining="139" etc="1557425329"/>
+<taskprogress task="NSE" time="1557425220" percent="99.69" remaining="139" etc="1557425359"/>
+<taskprogress task="NSE" time="1557425250" percent="99.69" remaining="139" etc="1557425389"/>
+<taskprogress task="NSE" time="1557425280" percent="99.69" remaining="139" etc="1557425419"/>
+<taskprogress task="NSE" time="1557425310" percent="99.69" remaining="139" etc="1557425449"/>
+<taskprogress task="NSE" time="1557425340" percent="99.69" remaining="139" etc="1557425479"/>
+<taskprogress task="NSE" time="1557425370" percent="99.69" remaining="140" etc="1557425509"/>
+<taskprogress task="NSE" time="1557425400" percent="99.69" remaining="140" etc="1557425539"/>
+<taskprogress task="NSE" time="1557425430" percent="99.69" remaining="140" etc="1557425569"/>
+<taskprogress task="NSE" time="1557425460" percent="99.69" remaining="140" etc="1557425599"/>
+<taskprogress task="NSE" time="1557425490" percent="99.69" remaining="140" etc="1557425629"/>
+<taskprogress task="NSE" time="1557425520" percent="99.69" remaining="140" etc="1557425660"/>
+<taskprogress task="NSE" time="1557425550" percent="99.69" remaining="140" etc="1557425690"/>
+<taskprogress task="NSE" time="1557425580" percent="99.69" remaining="140" etc="1557425720"/>
+<taskprogress task="NSE" time="1557425610" percent="99.69" remaining="140" etc="1557425750"/>
+<taskprogress task="NSE" time="1557425640" percent="99.69" remaining="140" etc="1557425780"/>
+<taskprogress task="NSE" time="1557425670" percent="99.69" remaining="141" etc="1557425810"/>
+<taskprogress task="NSE" time="1557425700" percent="99.69" remaining="141" etc="1557425840"/>
+<taskprogress task="NSE" time="1557425730" percent="99.69" remaining="141" etc="1557425870"/>
+<taskprogress task="NSE" time="1557425760" percent="99.69" remaining="141" etc="1557425900"/>
+<taskprogress task="NSE" time="1557425790" percent="99.69" remaining="141" etc="1557425930"/>
+<taskprogress task="NSE" time="1557425820" percent="99.69" remaining="141" etc="1557425960"/>
+<taskprogress task="NSE" time="1557425850" percent="99.69" remaining="141" etc="1557425991"/>
+<taskprogress task="NSE" time="1557425880" percent="99.69" remaining="141" etc="1557426021"/>
+<taskprogress task="NSE" time="1557425910" percent="99.69" remaining="141" etc="1557426051"/>
+<taskprogress task="NSE" time="1557425940" percent="99.69" remaining="141" etc="1557426081"/>
+<taskprogress task="NSE" time="1557425970" percent="99.69" remaining="141" etc="1557426111"/>
+<taskprogress task="NSE" time="1557426000" percent="99.69" remaining="142" etc="1557426141"/>
+<taskprogress task="NSE" time="1557426030" percent="99.69" remaining="142" etc="1557426171"/>
+<taskprogress task="NSE" time="1557426060" percent="99.69" remaining="142" etc="1557426201"/>
+<taskprogress task="NSE" time="1557426090" percent="99.69" remaining="142" etc="1557426231"/>
+<taskprogress task="NSE" time="1557426120" percent="99.69" remaining="142" etc="1557426261"/>
+<taskprogress task="NSE" time="1557426150" percent="99.69" remaining="142" etc="1557426292"/>
+<taskprogress task="NSE" time="1557426180" percent="99.69" remaining="142" etc="1557426322"/>
+<taskprogress task="NSE" time="1557426210" percent="99.69" remaining="142" etc="1557426352"/>
+<taskprogress task="NSE" time="1557426240" percent="99.69" remaining="142" etc="1557426382"/>
+<taskprogress task="NSE" time="1557426270" percent="99.69" remaining="142" etc="1557426412"/>
+<taskprogress task="NSE" time="1557426300" percent="99.69" remaining="142" etc="1557426442"/>
+<taskprogress task="NSE" time="1557426330" percent="99.69" remaining="143" etc="1557426472"/>
+<taskprogress task="NSE" time="1557426360" percent="99.69" remaining="143" etc="1557426502"/>
+<taskend task="NSE" time="1557426383"/>
+<taskbegin task="NSE" time="1557426383"/>
+<taskend task="NSE" time="1557426384"/>
+<host starttime="1557380574" endtime="1557426384"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.2.3" extrainfo="(CentOS)" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.3</cpe></service><script id="http-auth-finder" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.7&#xa;  url                      method&#xa;  https://10.10.10.7:443/  FORM&#xa;"/><script id="http-brute" output="  &#xa;  Path &quot;/&quot; does not require authentication"/><script id="http-chrono" output="Request times for /; avg: 1145.56ms; min: 935.78ms; max: 1421.63ms"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.7&#xa;    &#xa;    Path: https://10.10.10.7:443/&#xa;    Line number: 6&#xa;    Comment: &#xa;        &lt;!-&#45;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot;&gt;-&#45;&gt;&#xa;    &#xa;    Path: https://10.10.10.7:443/themes/elastixneo/login_styles.css&#xa;    Line number: 29&#xa;    Comment: &#xa;        /* -moz-box-shadow: 8px 8px 10px rgb(0,0,0); */&#xa;"/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-date" output="Thu, 09 May 2019 02:37:35 GMT; -3h05m36s from local time."><elem key="date">2019-05-09T02:37:35+00:00</elem>
+<elem key="delta">-11136.0</elem>
+</script><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-errors" output="Couldn&apos;t find any error pages."/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-fileupload-exploiter" output="&#xa;  &#xa;    Couldn&apos;t find a file-type field."><table>
+<elem>Couldn&apos;t find a file-type field.</elem>
+</table>
+</script><script id="http-form-brute" output="&#xa;  Accounts: No valid accounts found&#xa;  Statistics: Performed 5 guesses in 7 seconds, average tps: 0.7&#xa;  ERROR: The service seems to have failed or is heavily firewalled..."><elem key="Accounts">No valid accounts found</elem>
+<elem key="Statistics">Performed 5 guesses in 7 seconds, average tps: 0.7</elem>
+<elem key="ERROR">The service seems to have failed or is heavily firewalled...</elem>
+</script><script id="http-headers" output="&#xa;  Date: Thu, 09 May 2019 02:38:07 GMT&#xa;  Server: Apache/2.2.3 (CentOS)&#xa;  X-Powered-By: PHP/5.1.6&#xa;  Set-Cookie: elastixSession=bjkmkknuq51h31t105oppeef11; path=/&#xa;  Expires: Thu, 19 Nov 1981 08:52:00 GMT&#xa;  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0&#xa;  Pragma: no-cache&#xa;  Content-Length: 1785&#xa;  Connection: close&#xa;  Content-Type: text/html; charset=UTF-8&#xa;  &#xa;  (Request type: GET)&#xa;"/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-methods" output="&#xa;  Supported Methods: POST"><table key="Supported Methods">
+<elem>POST</elem>
+</table>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-php-version" output="Logo query returned unknown hash c7a8ec10b0047500bca272fbd725d8f7"/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-security-headers" output="&#xa;  Strict_Transport_Security: &#xa;    HSTS not configured in HTTPS Server"><table key="Strict_Transport_Security">
+<elem>HSTS not configured in HTTPS Server</elem>
+</table>
+</script><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1&#xa;    /themes/elastixneo/&#xa;      css: 1&#xa;    /themes/elastixneo/images/&#xa;      png: 1&#xa;  Longest directory structure:&#xa;    Depth: 3&#xa;    Dir: /themes/elastixneo/images/&#xa;  Total files found (by extension):&#xa;    Other: 1; css: 1; png: 1&#xa;"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="Elastix - Login page"><elem key="title">Elastix - Login page</elem>
+</script><script id="http-traceroute" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-vhosts" output="&#xa;84 names had status ERROR&#xa;43 names had status 200"/><script id="http-vuln-cve2014-3704" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-wordpress-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args search-limit=&lt;number|all&gt; for deeper analysis)"/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/><script id="ssl-ccs-injection" output="&#xa;  VULNERABLE:&#xa;  SSL/TLS MITM vulnerability (CCS Injection)&#xa;    State: VULNERABLE&#xa;    Risk factor: High&#xa;      OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h&#xa;      does not properly restrict processing of ChangeCipherSpec messages,&#xa;      which allows man-in-the-middle attackers to trigger use of a zero&#xa;      length master key in certain OpenSSL-to-OpenSSL communications, and&#xa;      consequently hijack sessions or obtain sensitive information, via&#xa;      a crafted TLS handshake, aka the &quot;CCS Injection&quot; vulnerability.&#xa;          &#xa;    References:&#xa;      http://www.openssl.org/news/secadv_20140605.txt&#xa;      http://www.cvedetails.com/cve/2014-0224&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224&#xa;"><table key="NMAP-2">
+<elem key="title">SSL/TLS MITM vulnerability (CCS Injection)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h&#xa;does not properly restrict processing of ChangeCipherSpec messages,&#xa;which allows man-in-the-middle attackers to trigger use of a zero&#xa;length master key in certain OpenSSL-to-OpenSSL communications, and&#xa;consequently hijack sessions or obtain sensitive information, via&#xa;a crafted TLS handshake, aka the &quot;CCS Injection&quot; vulnerability.&#xa;    </elem>
+</table>
+<table key="refs">
+<elem>http://www.openssl.org/news/secadv_20140605.txt</elem>
+<elem>http://www.cvedetails.com/cve/2014-0224</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224</elem>
+</table>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=-&#45;/emailAddress=root@localhost.localdomain/organizationalUnitName=SomeOrganizationalUnit/localityName=SomeCity&#xa;Issuer: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=-&#45;/emailAddress=root@localhost.localdomain/organizationalUnitName=SomeOrganizationalUnit/localityName=SomeCity&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2017-04-07T08:22:08&#xa;Not valid after:  2018-04-07T08:22:08&#xa;MD5:   621a 82b6 cf7e 1afa 5284 1c91 60c8 fbc8&#xa;SHA-1: 800a c6e7 065e 1198 0187 c452 0d9b 18ef e557 a09f&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEDjCCA3egAwIBAgICfVUwDQYJKoZIhvcNAQEFBQAwgbsxCzAJBgNVBAYTAi0t&#xa;MRIwEAYDVQQIEwlTb21lU3RhdGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQK&#xa;ExBTb21lT3JnYW5pemF0aW9uMR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxV&#xa;bml0MR4wHAYDVQQDExVsb2NhbGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0B&#xa;CQEWGnJvb3RAbG9jYWxob3N0LmxvY2FsZG9tYWluMB4XDTE3MDQwNzA4MjIwOFoX&#xa;DTE4MDQwNzA4MjIwOFowgbsxCzAJBgNVBAYTAi0tMRIwEAYDVQQIEwlTb21lU3Rh&#xa;dGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQKExBTb21lT3JnYW5pemF0aW9u&#xa;MR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxVbml0MR4wHAYDVQQDExVsb2Nh&#xa;bGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0BCQEWGnJvb3RAbG9jYWxob3N0&#xa;LmxvY2FsZG9tYWluMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3e4HhLYPN&#xa;gwJ4eKlW/UpmemPfK/a3mcafSqx/AJP34OC0Twj/cZNaqFPLOWfNjcq4mmiV++9a&#xa;oJCkj4apDkyICI1emsrPaRdrlA/cCXcn3nupfOgcfpBV4vqNfqorEqpJCO7T4bcp&#xa;Z6YHuxtRtP7gRJiE1ytAFP2jDvtvMqEWkwIDAQABo4IBHTCCARkwHQYDVR0OBBYE&#xa;FL/OLJ7hJVedlL5Gk0fYvo6bZkqWMIHpBgNVHSMEgeEwgd6AFL/OLJ7hJVedlL5G&#xa;k0fYvo6bZkqWoYHBpIG+MIG7MQswCQYDVQQGEwItLTESMBAGA1UECBMJU29tZVN0&#xa;YXRlMREwDwYDVQQHEwhTb21lQ2l0eTEZMBcGA1UEChMQU29tZU9yZ2FuaXphdGlv&#xa;bjEfMB0GA1UECxMWU29tZU9yZ2FuaXphdGlvbmFsVW5pdDEeMBwGA1UEAxMVbG9j&#xa;YWxob3N0LmxvY2FsZG9tYWluMSkwJwYJKoZIhvcNAQkBFhpyb290QGxvY2FsaG9z&#xa;dC5sb2NhbGRvbWFpboICfVUwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOB&#xa;gQA+ah2n+bomON94KgibPEVPpmW+8N6Sq3f4qDG54urTnPD39GrYHvMwA3B2ang9&#xa;l3zta5tXYAVj22kiNM2si4bOMQsa6FZR4AEzWCq9tZS/vTCCRaT79mWj3bUvtDkV&#xa;2ScJ9I/7b4/cPHDOrAKdzdKxEE2oM0cwKxSnYBJk/4aJIw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="emailAddress">root@localhost.localdomain</elem>
+<elem key="countryName">-&#45;</elem>
+<elem key="stateOrProvinceName">SomeState</elem>
+<elem key="organizationalUnitName">SomeOrganizationalUnit</elem>
+<elem key="localityName">SomeCity</elem>
+<elem key="commonName">localhost.localdomain</elem>
+<elem key="organizationName">SomeOrganization</elem>
+</table>
+<table key="issuer">
+<elem key="emailAddress">root@localhost.localdomain</elem>
+<elem key="countryName">-&#45;</elem>
+<elem key="stateOrProvinceName">SomeState</elem>
+<elem key="organizationalUnitName">SomeOrganizationalUnit</elem>
+<elem key="localityName">SomeCity</elem>
+<elem key="commonName">localhost.localdomain</elem>
+<elem key="organizationName">SomeOrganization</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">1024</elem>
+<elem key="modulus">userdata: 0x25f9a18</elem>
+<elem key="exponent">userdata: 0x28730f8</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">BF:CE:2C:9E:E1:25:57:9D:94:BE:46:93:47:D8:BE:8E:9B:66:4A:96</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:BF:CE:2C:9E:E1:25:57:9D:94:BE:46:93:47:D8:BE:8E:9B:66:4A:96&#xa;DirName:/C=-&#45;/ST=SomeState/L=SomeCity/O=SomeOrganization/OU=SomeOrganizationalUnit/CN=localhost.localdomain/emailAddress=root@localhost.localdomain&#xa;serial:7D:55&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2017-04-07T08:22:08</elem>
+<elem key="notAfter">2018-04-07T08:22:08</elem>
+</table>
+<elem key="md5">621a82b6cf7e1afa52841c9160c8fbc8</elem>
+<elem key="sha1">800ac6e7065e11980187c4520d9b18efe557a09f</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEDjCCA3egAwIBAgICfVUwDQYJKoZIhvcNAQEFBQAwgbsxCzAJBgNVBAYTAi0t&#xa;MRIwEAYDVQQIEwlTb21lU3RhdGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQK&#xa;ExBTb21lT3JnYW5pemF0aW9uMR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxV&#xa;bml0MR4wHAYDVQQDExVsb2NhbGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0B&#xa;CQEWGnJvb3RAbG9jYWxob3N0LmxvY2FsZG9tYWluMB4XDTE3MDQwNzA4MjIwOFoX&#xa;DTE4MDQwNzA4MjIwOFowgbsxCzAJBgNVBAYTAi0tMRIwEAYDVQQIEwlTb21lU3Rh&#xa;dGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQKExBTb21lT3JnYW5pemF0aW9u&#xa;MR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxVbml0MR4wHAYDVQQDExVsb2Nh&#xa;bGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0BCQEWGnJvb3RAbG9jYWxob3N0&#xa;LmxvY2FsZG9tYWluMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3e4HhLYPN&#xa;gwJ4eKlW/UpmemPfK/a3mcafSqx/AJP34OC0Twj/cZNaqFPLOWfNjcq4mmiV++9a&#xa;oJCkj4apDkyICI1emsrPaRdrlA/cCXcn3nupfOgcfpBV4vqNfqorEqpJCO7T4bcp&#xa;Z6YHuxtRtP7gRJiE1ytAFP2jDvtvMqEWkwIDAQABo4IBHTCCARkwHQYDVR0OBBYE&#xa;FL/OLJ7hJVedlL5Gk0fYvo6bZkqWMIHpBgNVHSMEgeEwgd6AFL/OLJ7hJVedlL5G&#xa;k0fYvo6bZkqWoYHBpIG+MIG7MQswCQYDVQQGEwItLTESMBAGA1UECBMJU29tZVN0&#xa;YXRlMREwDwYDVQQHEwhTb21lQ2l0eTEZMBcGA1UEChMQU29tZU9yZ2FuaXphdGlv&#xa;bjEfMB0GA1UECxMWU29tZU9yZ2FuaXphdGlvbmFsVW5pdDEeMBwGA1UEAxMVbG9j&#xa;YWxob3N0LmxvY2FsZG9tYWluMSkwJwYJKoZIhvcNAQkBFhpyb290QGxvY2FsaG9z&#xa;dC5sb2NhbGRvbWFpboICfVUwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOB&#xa;gQA+ah2n+bomON94KgibPEVPpmW+8N6Sq3f4qDG54urTnPD39GrYHvMwA3B2ang9&#xa;l3zta5tXYAVj22kiNM2si4bOMQsa6FZR4AEzWCq9tZS/vTCCRaT79mWj3bUvtDkV&#xa;2ScJ9I/7b4/cPHDOrAKdzdKxEE2oM0cwKxSnYBJk/4aJIw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2019-05-09T02:37:40+00:00; -3h05m33s from scanner time."><elem key="date">2019-05-09T02:37:40+00:00</elem>
+<elem key="delta">-11133.0</elem>
+</script><script id="ssl-dh-params" output="&#xa;  VULNERABLE:&#xa;  Diffie-Hellman Key Exchange Insufficient Group Strength&#xa;    State: VULNERABLE&#xa;      Transport Layer Security (TLS) services that use Diffie-Hellman groups&#xa;      of insufficient strength, especially those using one of a few commonly&#xa;      shared groups, may be susceptible to passive eavesdropping attacks.&#xa;    Check results:&#xa;      WEAK DH GROUP 1&#xa;            Cipher Suite: TLS_DHE_RSA_WITH_AES_128_CBC_SHA&#xa;            Modulus Type: Safe prime&#xa;            Modulus Source: mod_ssl 2.2.x/1024-bit MODP group with safe prime modulus&#xa;            Modulus Length: 1024&#xa;            Generator Length: 8&#xa;            Public Key Length: 1024&#xa;    References:&#xa;      https://weakdh.org&#xa;"><table key="NMAP-4">
+<elem key="title">Diffie-Hellman Key Exchange Insufficient Group Strength</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>Transport Layer Security (TLS) services that use Diffie-Hellman groups&#xa;of insufficient strength, especially those using one of a few commonly&#xa;shared groups, may be susceptible to passive eavesdropping attacks.</elem>
+</table>
+<table key="check_results">
+<elem>WEAK DH GROUP 1&#xa;      Cipher Suite: TLS_DHE_RSA_WITH_AES_128_CBC_SHA&#xa;      Modulus Type: Safe prime&#xa;      Modulus Source: mod_ssl 2.2.x/1024-bit MODP group with safe prime modulus&#xa;      Modulus Length: 1024&#xa;      Generator Length: 8&#xa;      Public Key Length: 1024</elem>
+</table>
+<table key="refs">
+<elem>https://weakdh.org</elem>
+</table>
+</table>
+</script><script id="ssl-enum-ciphers" output="&#xa;  SSLv3: &#xa;    ciphers: &#xa;      TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 1024) - D&#xa;      TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A&#xa;      TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 1024) - A&#xa;      TLS_DHE_RSA_WITH_DES_CBC_SHA (dh 1024) - D&#xa;      TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 1024) - D&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A&#xa;      TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A&#xa;      TLS_RSA_WITH_DES_CBC_SHA (rsa 1024) - D&#xa;      TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - D&#xa;      TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - D&#xa;    compressors: &#xa;      DEFLATE&#xa;      NULL&#xa;    cipher preference: client&#xa;    warnings: &#xa;      64-bit block cipher 3DES vulnerable to SWEET32 attack&#xa;      64-bit block cipher DES vulnerable to SWEET32 attack&#xa;      Broken cipher RC4 is deprecated by RFC 7465&#xa;      CBC-mode cipher in SSLv3 (CVE-2014-3566)&#xa;      Ciphersuite uses MD5 for message integrity&#xa;      Weak certificate signature: SHA1&#xa;  TLSv1.0: &#xa;    ciphers: &#xa;      TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (dh 1024) - D&#xa;      TLS_DHE_RSA_WITH_AES_128_CBC_SHA (dh 1024) - A&#xa;      TLS_DHE_RSA_WITH_AES_256_CBC_SHA (dh 1024) - A&#xa;      TLS_DHE_RSA_WITH_DES_CBC_SHA (dh 1024) - D&#xa;      TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 1024) - D&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - A&#xa;      TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - A&#xa;      TLS_RSA_WITH_DES_CBC_SHA (rsa 1024) - D&#xa;      TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - D&#xa;      TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - D&#xa;    compressors: &#xa;      DEFLATE&#xa;      NULL&#xa;    cipher preference: client&#xa;    warnings: &#xa;      64-bit block cipher 3DES vulnerable to SWEET32 attack&#xa;      64-bit block cipher DES vulnerable to SWEET32 attack&#xa;      Broken cipher RC4 is deprecated by RFC 7465&#xa;      Ciphersuite uses MD5 for message integrity&#xa;      Weak certificate signature: SHA1&#xa;  least strength: D"><table key="SSLv3">
+<table key="ciphers">
+<table>
+<elem key="name">TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA</elem>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">D</elem>
+</table>
+<table>
+<elem key="name">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</elem>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</elem>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_DHE_RSA_WITH_DES_CBC_SHA</elem>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">D</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_3DES_EDE_CBC_SHA</elem>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_AES_256_CBC_SHA</elem>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_DES_CBC_SHA</elem>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_RC4_128_MD5</elem>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_RC4_128_SHA</elem>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>DEFLATE</elem>
+<elem>NULL</elem>
+</table>
+<elem key="cipher preference">client</elem>
+<table key="warnings">
+<elem>64-bit block cipher 3DES vulnerable to SWEET32 attack</elem>
+<elem>64-bit block cipher DES vulnerable to SWEET32 attack</elem>
+<elem>Broken cipher RC4 is deprecated by RFC 7465</elem>
+<elem>CBC-mode cipher in SSLv3 (CVE-2014-3566)</elem>
+<elem>Ciphersuite uses MD5 for message integrity</elem>
+<elem>Weak certificate signature: SHA1</elem>
+</table>
+</table>
+<table key="TLSv1.0">
+<table key="ciphers">
+<table>
+<elem key="name">TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA</elem>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">D</elem>
+</table>
+<table>
+<elem key="name">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</elem>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</elem>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_DHE_RSA_WITH_DES_CBC_SHA</elem>
+<elem key="kex_info">dh 1024</elem>
+<elem key="strength">D</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_3DES_EDE_CBC_SHA</elem>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_AES_256_CBC_SHA</elem>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_DES_CBC_SHA</elem>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_RC4_128_MD5</elem>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_RC4_128_SHA</elem>
+<elem key="kex_info">rsa 1024</elem>
+<elem key="strength">D</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>DEFLATE</elem>
+<elem>NULL</elem>
+</table>
+<elem key="cipher preference">client</elem>
+<table key="warnings">
+<elem>64-bit block cipher 3DES vulnerable to SWEET32 attack</elem>
+<elem>64-bit block cipher DES vulnerable to SWEET32 attack</elem>
+<elem>Broken cipher RC4 is deprecated by RFC 7465</elem>
+<elem>Ciphersuite uses MD5 for message integrity</elem>
+<elem>Weak certificate signature: SHA1</elem>
+</table>
+</table>
+<elem key="least strength">D</elem>
+</script><script id="ssl-poodle" output="&#xa;  VULNERABLE:&#xa;  SSL POODLE information leak&#xa;    State: VULNERABLE&#xa;    IDs:  OSVDB:113251  CVE:CVE-2014-3566&#xa;          The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other&#xa;          products, uses nondeterministic CBC padding, which makes it easier&#xa;          for man-in-the-middle attackers to obtain cleartext data via a&#xa;          padding-oracle attack, aka the &quot;POODLE&quot; issue.&#xa;    Disclosure date: 2014-10-14&#xa;    Check results:&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA&#xa;    References:&#xa;      https://www.openssl.org/~bodo/ssl-poodle.pdf&#xa;      https://www.imperialviolet.org/2014/10/14/poodle.html&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566&#xa;      http://osvdb.org/113251&#xa;"><table key="CVE-2014-3566">
+<elem key="title">SSL POODLE information leak</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>OSVDB:113251</elem>
+<elem>CVE:CVE-2014-3566</elem>
+</table>
+<table key="description">
+<elem>    The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other&#xa;    products, uses nondeterministic CBC padding, which makes it easier&#xa;    for man-in-the-middle attackers to obtain cleartext data via a&#xa;    padding-oracle attack, aka the &quot;POODLE&quot; issue.</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="month">10</elem>
+<elem key="day">14</elem>
+<elem key="year">2014</elem>
+</table>
+</table>
+<elem key="disclosure">2014-10-14</elem>
+<table key="check_results">
+<elem>TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+</table>
+<table key="refs">
+<elem>https://www.openssl.org/~bodo/ssl-poodle.pdf</elem>
+<elem>https://www.imperialviolet.org/2014/10/14/poodle.html</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566</elem>
+<elem>http://osvdb.org/113251</elem>
+</table>
+</table>
+</script><script id="sslv2-drown" output="&#xa;"></script></port>
+</ports>
+<times srtt="19362" rttvar="19362" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1557426384"/>
+<taskend task="NSE" time="1557426384"/>
+<taskbegin task="NSE" time="1557426384"/>
+<taskend task="NSE" time="1557426384"/>
+<runstats><finished time="1557426384" timestr="Thu May  9 14:26:24 2019" elapsed="45812.27" summary="Nmap done at Thu May  9 14:26:24 2019; 1 IP address (1 host up) scanned in 45812.27 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

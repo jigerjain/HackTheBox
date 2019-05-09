@@ -1,0 +1,17 @@
+# Nmap 7.70 scan initiated Thu May  9 01:42:40 2019 as: nmap -vv --reason -Pn -sV -p 111 --script=msrpc-enum,rpc-grind,rpcinfo -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_111_rpc_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_111_rpc_nmap.xml 10.10.10.7
+Nmap scan report for 10.10.10.7
+Host is up, received user-set (0.020s latency).
+Scanned at 2019-05-09 01:42:41 EDT for 7s
+
+PORT    STATE SERVICE REASON         VERSION
+111/tcp open  rpcbind syn-ack ttl 63 2 (RPC #100000)
+| rpcinfo: 
+|   program version   port/proto  service
+|   100000  2            111/tcp  rpcbind
+|   100000  2            111/udp  rpcbind
+|   100024  1            742/udp  status
+|_  100024  1            745/tcp  status
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu May  9 01:42:48 2019 -- 1 IP address (1 host up) scanned in 7.66 seconds

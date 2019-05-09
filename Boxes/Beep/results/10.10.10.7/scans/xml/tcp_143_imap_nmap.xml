@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu May  9 01:42:48 2019 as: nmap -vv -&#45;reason -Pn -sV -p 143 &quot;-&#45;script=(imap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_143_imap_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_143_imap_nmap.xml 10.10.10.7 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 143 &quot;-&#45;script=(imap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_143_imap_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_143_imap_nmap.xml 10.10.10.7" start="1557380568" startstr="Thu May  9 01:42:48 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="143"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1557380569"/>
+<taskend task="NSE" time="1557380569"/>
+<taskbegin task="NSE" time="1557380569"/>
+<taskend task="NSE" time="1557380569"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1557380569"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1557380569"/>
+<taskbegin task="SYN Stealth Scan" time="1557380569"/>
+<taskend task="SYN Stealth Scan" time="1557380569" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1557380570"/>
+<taskend task="Service scan" time="1557380580" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1557380580"/>
+<taskprogress task="NSE" time="1557380611" percent="87.72" remaining="5" etc="1557380615"/>
+<taskprogress task="NSE" time="1557380641" percent="91.23" remaining="6" etc="1557380647"/>
+<taskprogress task="NSE" time="1557380671" percent="96.49" remaining="4" etc="1557380674"/>
+<taskend task="NSE" time="1557380687"/>
+<taskbegin task="NSE" time="1557380687"/>
+<taskprogress task="NSE" time="1557380718" percent="66.67" remaining="16" etc="1557380733"/>
+<taskend task="NSE" time="1557380722"/>
+<host starttime="1557380569" endtime="1557380722"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="imap" product="Cyrus imapd" version="2.3.7-Invoca-RPM-2.3.7-7.el5_6.4" hostname="example.com" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server:2.3.7-invoca-rpm-2.3.7-7.el5_6.4</cpe></service><script id="imap-capabilities" output="OK Completed URLAUTHA0001 X-NETSCAPE ID IDLE LIST-SUBSCRIBED UIDPLUS NO MULTIAPPEND RIGHTS=kxte RENAME NAMESPACE LISTEXT CONDSTORE IMAP4 CATENATE THREAD=REFERENCES QUOTA CHILDREN ANNOTATEMORE THREAD=ORDEREDSUBJECT ACL SORT SORT=MODSEQ BINARY LITERAL+ STARTTLS ATOMIC IMAP4rev1 UNSELECT MAILBOX-REFERRALS"/><script id="sslv2-drown" output="&#xa;"></script></port>
+</ports>
+<times srtt="20979" rttvar="20979" to="104895"/>
+</host>
+<taskbegin task="NSE" time="1557380722"/>
+<taskend task="NSE" time="1557380722"/>
+<taskbegin task="NSE" time="1557380722"/>
+<taskend task="NSE" time="1557380722"/>
+<runstats><finished time="1557380722" timestr="Thu May  9 01:45:22 2019" elapsed="154.58" summary="Nmap done at Thu May  9 01:45:22 2019; 1 IP address (1 host up) scanned in 154.58 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

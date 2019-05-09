@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Date: Thu, 09 May 2019 02:37:22 GMT
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Tue, 01 Nov 2011 19:56:22 GMT
+ETag: "d916f-1c-bfe50580"
+Accept-Ranges: bytes
+Content-Length: 28
+Connection: close
+Content-Type: text/plain; charset=UTF-8
+
+User-agent: *
+Disallow: /

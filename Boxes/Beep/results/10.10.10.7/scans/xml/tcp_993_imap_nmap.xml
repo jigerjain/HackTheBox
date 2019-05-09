@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu May  9 01:43:12 2019 as: nmap -vv -&#45;reason -Pn -sV -p 993 &quot;-&#45;script=(imap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_993_imap_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_993_imap_nmap.xml 10.10.10.7 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 993 &quot;-&#45;script=(imap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_993_imap_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_993_imap_nmap.xml 10.10.10.7" start="1557380592" startstr="Thu May  9 01:43:12 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="993"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1557380594"/>
+<taskend task="NSE" time="1557380594"/>
+<taskbegin task="NSE" time="1557380594"/>
+<taskend task="NSE" time="1557380594"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1557380594"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1557380594"/>
+<taskbegin task="SYN Stealth Scan" time="1557380594"/>
+<taskend task="SYN Stealth Scan" time="1557380594" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1557380594"/>
+<taskend task="Service scan" time="1557380605" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1557380605"/>
+<taskprogress task="NSE" time="1557380636" percent="87.72" remaining="5" etc="1557380640"/>
+<taskprogress task="NSE" time="1557380666" percent="96.49" remaining="3" etc="1557380668"/>
+<taskend task="NSE" time="1557380689"/>
+<taskbegin task="NSE" time="1557380689"/>
+<taskend task="NSE" time="1557380712"/>
+<host starttime="1557380594" endtime="1557380712"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="imap" product="Cyrus imapd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server</cpe></service><script id="ssl-ccs-injection" output="No reply from server (TIMEOUT)"/><script id="sslv2-drown" output="&#xa;"></script></port>
+</ports>
+<times srtt="99109" rttvar="99109" to="495545"/>
+</host>
+<taskbegin task="NSE" time="1557380712"/>
+<taskend task="NSE" time="1557380712"/>
+<taskbegin task="NSE" time="1557380712"/>
+<taskend task="NSE" time="1557380712"/>
+<runstats><finished time="1557380712" timestr="Thu May  9 01:45:12 2019" elapsed="120.15" summary="Nmap done at Thu May  9 01:45:12 2019; 1 IP address (1 host up) scanned in 120.15 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

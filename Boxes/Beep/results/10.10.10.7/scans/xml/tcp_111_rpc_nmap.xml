@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu May  9 01:42:40 2019 as: nmap -vv -&#45;reason -Pn -sV -p 111 -&#45;script=msrpc-enum,rpc-grind,rpcinfo -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_111_rpc_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_111_rpc_nmap.xml 10.10.10.7 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 111 -&#45;script=msrpc-enum,rpc-grind,rpcinfo -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_111_rpc_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_111_rpc_nmap.xml 10.10.10.7" start="1557380560" startstr="Thu May  9 01:42:40 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="111"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1557380561"/>
+<taskend task="NSE" time="1557380561"/>
+<taskbegin task="NSE" time="1557380561"/>
+<taskend task="NSE" time="1557380561"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1557380561"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1557380561"/>
+<taskbegin task="SYN Stealth Scan" time="1557380561"/>
+<taskend task="SYN Stealth Scan" time="1557380561" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1557380562"/>
+<taskend task="Service scan" time="1557380568" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1557380568"/>
+<taskend task="NSE" time="1557380568"/>
+<taskbegin task="NSE" time="1557380568"/>
+<taskend task="NSE" time="1557380568"/>
+<host starttime="1557380561" endtime="1557380568"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="rpcbind" version="2" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version   port/proto  service&#xa;  100000  2            111/tcp  rpcbind&#xa;  100000  2            111/udp  rpcbind&#xa;  100024  1            742/udp  status&#xa;  100024  1            745/tcp  status&#xa;"><table key="100000">
+<table key="udp">
+<elem key="port">111</elem>
+<table key="version">
+<elem>2</elem>
+</table>
+</table>
+<table key="tcp">
+<elem key="port">111</elem>
+<table key="version">
+<elem>2</elem>
+</table>
+</table>
+</table>
+<table key="100024">
+<table key="tcp">
+<elem key="port">745</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+</table>
+<table key="udp">
+<elem key="port">742</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+</table>
+</table>
+</script></port>
+</ports>
+<times srtt="20076" rttvar="20076" to="100380"/>
+</host>
+<taskbegin task="NSE" time="1557380568"/>
+<taskend task="NSE" time="1557380568"/>
+<taskbegin task="NSE" time="1557380568"/>
+<taskend task="NSE" time="1557380568"/>
+<runstats><finished time="1557380568" timestr="Thu May  9 01:42:48 2019" elapsed="7.66" summary="Nmap done at Thu May  9 01:42:48 2019; 1 IP address (1 host up) scanned in 7.66 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

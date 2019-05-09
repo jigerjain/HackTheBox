@@ -1,0 +1,53 @@
+
+Gobuster v1.4.1              OJ Reeves (@TheColonial)
+=====================================================
+=====================================================
+[+] Mode         : dir
+[+] Url/Domain   : https://10.10.10.7:443/
+[+] Threads      : 10
+[+] Wordlist     : /usr/share/seclists/Discovery/Web-Content/common.txt
+[+] Status codes : 301,302,307,403,200,204
+[+] Show length  : true
+[+] Extensions   : .txt,.html,.php,.asp,.aspx
+[+] Expanded     : true
+=====================================================
+https://10.10.10.7:443/.hta (Status: 403) [Size: 282]
+https://10.10.10.7:443/.hta.txt (Status: 403) [Size: 286]
+https://10.10.10.7:443/.hta.html (Status: 403) [Size: 287]
+https://10.10.10.7:443/.hta.php (Status: 403) [Size: 286]
+https://10.10.10.7:443/.hta.asp (Status: 403) [Size: 286]
+https://10.10.10.7:443/.hta.aspx (Status: 403) [Size: 287]
+https://10.10.10.7:443/.htaccess (Status: 403) [Size: 287]
+https://10.10.10.7:443/.htpasswd (Status: 403) [Size: 287]
+https://10.10.10.7:443/.htaccess.txt (Status: 403) [Size: 291]
+https://10.10.10.7:443/.htpasswd.txt (Status: 403) [Size: 291]
+https://10.10.10.7:443/.htaccess.html (Status: 403) [Size: 292]
+https://10.10.10.7:443/.htpasswd.html (Status: 403) [Size: 292]
+https://10.10.10.7:443/.htaccess.php (Status: 403) [Size: 291]
+https://10.10.10.7:443/.htpasswd.php (Status: 403) [Size: 291]
+https://10.10.10.7:443/.htaccess.asp (Status: 403) [Size: 291]
+https://10.10.10.7:443/.htpasswd.asp (Status: 403) [Size: 291]
+https://10.10.10.7:443/.htaccess.aspx (Status: 403) [Size: 292]
+https://10.10.10.7:443/.htpasswd.aspx (Status: 403) [Size: 292]
+https://10.10.10.7:443/admin (Status: 301)
+https://10.10.10.7:443/cgi-bin/ (Status: 403) [Size: 286]
+https://10.10.10.7:443/cgi-bin/.html (Status: 403) [Size: 291]
+https://10.10.10.7:443/configs (Status: 301)
+https://10.10.10.7:443/config.php (Status: 200) [Size: 1785]
+https://10.10.10.7:443/favicon.ico (Status: 200) [Size: 894]
+https://10.10.10.7:443/help (Status: 301)
+https://10.10.10.7:443/images (Status: 301)
+https://10.10.10.7:443/index.php (Status: 200) [Size: 1785]
+https://10.10.10.7:443/index.php (Status: 200) [Size: 1785]
+https://10.10.10.7:443/lang (Status: 301)
+https://10.10.10.7:443/libs (Status: 301)
+https://10.10.10.7:443/mail (Status: 301)
+https://10.10.10.7:443/modules (Status: 301)
+https://10.10.10.7:443/panel (Status: 301)
+https://10.10.10.7:443/register.php (Status: 200) [Size: 1785]
+https://10.10.10.7:443/robots.txt (Status: 200) [Size: 28]
+https://10.10.10.7:443/robots.txt (Status: 200) [Size: 28]
+https://10.10.10.7:443/static (Status: 301)
+https://10.10.10.7:443/themes (Status: 301)
+https://10.10.10.7:443/var (Status: 301)
+=====================================================

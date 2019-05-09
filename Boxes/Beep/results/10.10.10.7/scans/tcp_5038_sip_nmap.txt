@@ -1,0 +1,11 @@
+# Nmap 7.70 scan initiated Thu May  9 01:45:24 2019 as: nmap -vv --reason -Pn -sV -p 5038 --script=sip-enum-users,sip-methods -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_5038_sip_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_5038_sip_nmap.xml 10.10.10.7
+Nmap scan report for 10.10.10.7
+Host is up, received user-set (0.019s latency).
+Scanned at 2019-05-09 01:45:25 EDT for 1s
+
+PORT     STATE SERVICE  REASON         VERSION
+5038/tcp open  asterisk syn-ack ttl 63 Asterisk Call Manager 1.1
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu May  9 01:45:26 2019 -- 1 IP address (1 host up) scanned in 2.23 seconds

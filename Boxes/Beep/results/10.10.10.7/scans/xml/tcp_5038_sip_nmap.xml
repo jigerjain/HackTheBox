@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu May  9 01:45:24 2019 as: nmap -vv -&#45;reason -Pn -sV -p 5038 -&#45;script=sip-enum-users,sip-methods -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_5038_sip_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_5038_sip_nmap.xml 10.10.10.7 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 5038 -&#45;script=sip-enum-users,sip-methods -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_5038_sip_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_5038_sip_nmap.xml 10.10.10.7" start="1557380724" startstr="Thu May  9 01:45:24 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="5038"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1557380725"/>
+<taskend task="NSE" time="1557380725"/>
+<taskbegin task="NSE" time="1557380725"/>
+<taskend task="NSE" time="1557380725"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1557380725"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1557380725"/>
+<taskbegin task="SYN Stealth Scan" time="1557380725"/>
+<taskend task="SYN Stealth Scan" time="1557380725" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1557380726"/>
+<taskend task="Service scan" time="1557380726" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1557380726"/>
+<taskend task="NSE" time="1557380726"/>
+<taskbegin task="NSE" time="1557380726"/>
+<taskend task="NSE" time="1557380726"/>
+<host starttime="1557380725" endtime="1557380726"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="5038"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="asterisk" product="Asterisk Call Manager" version="1.1" method="probed" conf="10"><cpe>cpe:/a:digium:asterisk:1.1</cpe></service></port>
+</ports>
+<times srtt="19272" rttvar="19272" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1557380726"/>
+<taskend task="NSE" time="1557380726"/>
+<taskbegin task="NSE" time="1557380726"/>
+<taskend task="NSE" time="1557380726"/>
+<runstats><finished time="1557380726" timestr="Thu May  9 01:45:26 2019" elapsed="2.23" summary="Nmap done at Thu May  9 01:45:26 2019; 1 IP address (1 host up) scanned in 2.23 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

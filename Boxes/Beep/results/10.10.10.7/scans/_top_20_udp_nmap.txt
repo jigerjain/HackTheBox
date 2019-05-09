@@ -1,0 +1,51 @@
+# Nmap 7.70 scan initiated Thu May  9 01:32:11 2019 as: nmap -vv --reason -Pn -sU -A --top-ports=20 --version-all -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/_top_20_udp_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/_top_20_udp_nmap.xml 10.10.10.7
+Nmap scan report for 10.10.10.7
+Host is up, received user-set (0.023s latency).
+Scanned at 2019-05-09 01:32:12 EDT for 259s
+
+PORT      STATE         SERVICE      REASON              VERSION
+53/udp    closed        domain       port-unreach ttl 63
+67/udp    closed        dhcps        port-unreach ttl 63
+68/udp    closed        dhcpc        port-unreach ttl 63
+69/udp    open|filtered tftp         no-response
+123/udp   open          ntp          udp-response ttl 63 NTP v4 (unsynchronized)
+| ntp-info: 
+|_  receive time stamp: 2019-05-09T02:30:53
+135/udp   closed        msrpc        port-unreach ttl 63
+137/udp   closed        netbios-ns   port-unreach ttl 63
+138/udp   closed        netbios-dgm  port-unreach ttl 63
+139/udp   closed        netbios-ssn  port-unreach ttl 63
+161/udp   closed        snmp         port-unreach ttl 63
+162/udp   closed        snmptrap     port-unreach ttl 63
+445/udp   closed        microsoft-ds port-unreach ttl 63
+500/udp   closed        isakmp       port-unreach ttl 63
+514/udp   closed        syslog       port-unreach ttl 63
+520/udp   closed        route        port-unreach ttl 63
+631/udp   closed        ipp          port-unreach ttl 63
+1434/udp  closed        ms-sql-m     port-unreach ttl 63
+1900/udp  closed        upnp         port-unreach ttl 63
+4500/udp  closed        nat-t-ike    port-unreach ttl 63
+49152/udp closed        unknown      port-unreach ttl 63
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.70%E=4%D=5/9%OT=%CT=%CU=53%PV=Y%DS=2%DC=T%G=N%TM=5CD3BC5F%P=i686-pc-linux-gnu)
+SEQ(CI=Z%II=I)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 2 hops
+
+Host script results:
+|_clock-skew: mean: -3h05m27s, deviation: 0s, median: -3h05m27s
+
+TRACEROUTE (using port 631/udp)
+HOP RTT      ADDRESS
+1   22.19 ms 10.10.14.1
+2   22.40 ms 10.10.10.7
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu May  9 01:36:31 2019 -- 1 IP address (1 host up) scanned in 260.98 seconds

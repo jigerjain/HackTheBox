@@ -1,0 +1,112 @@
+Version: 1.11.11-static
+OpenSSL 1.0.2-chacha (1.0.2g-dev)
+
+Connected to 10.10.10.7
+
+Testing SSL server 10.10.10.7 on port 443 using SNI name 10.10.10.7
+
+  TLS Fallback SCSV:
+Server does not support TLS Fallback SCSV
+
+  TLS renegotiation:
+Secure session renegotiation supported
+
+  TLS Compression:
+Compression enabled (CRIME)
+
+  Heartbleed:
+TLS 1.2 not vulnerable to heartbleed
+TLS 1.1 not vulnerable to heartbleed
+TLS 1.0 not vulnerable to heartbleed
+
+  Supported Server Cipher(s):
+Preferred TLSv1.0  256 bits  DHE-RSA-AES256-SHA            DHE 1024 bits
+Accepted  TLSv1.0  256 bits  AES256-SHA                   
+Accepted  TLSv1.0  128 bits  DHE-RSA-AES128-SHA            DHE 1024 bits
+Accepted  TLSv1.0  128 bits  AES128-SHA                   
+Accepted  TLSv1.0  128 bits  RC4-SHA                      
+Accepted  TLSv1.0  128 bits  RC4-MD5                      
+Accepted  TLSv1.0  112 bits  EDH-RSA-DES-CBC3-SHA          DHE 1024 bits
+Accepted  TLSv1.0  112 bits  DES-CBC3-SHA                 
+Accepted  TLSv1.0  56 bits   EDH-RSA-DES-CBC-SHA           DHE 1024 bits
+Accepted  TLSv1.0  56 bits   DES-CBC-SHA                  
+Preferred SSLv3    256 bits  DHE-RSA-AES256-SHA            DHE 1024 bits
+Accepted  SSLv3    256 bits  AES256-SHA                   
+Accepted  SSLv3    128 bits  DHE-RSA-AES128-SHA            DHE 1024 bits
+Accepted  SSLv3    128 bits  AES128-SHA                   
+Accepted  SSLv3    128 bits  RC4-SHA                      
+Accepted  SSLv3    128 bits  RC4-MD5                      
+Accepted  SSLv3    112 bits  EDH-RSA-DES-CBC3-SHA          DHE 1024 bits
+Accepted  SSLv3    112 bits  DES-CBC3-SHA                 
+Accepted  SSLv3    56 bits   EDH-RSA-DES-CBC-SHA           DHE 1024 bits
+Accepted  SSLv3    56 bits   DES-CBC-SHA                  
+
+  SSL Certificate:
+    Certificate blob:
+-----BEGIN CERTIFICATE-----
+MIIEDjCCA3egAwIBAgICfVUwDQYJKoZIhvcNAQEFBQAwgbsxCzAJBgNVBAYTAi0t
+MRIwEAYDVQQIEwlTb21lU3RhdGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQK
+ExBTb21lT3JnYW5pemF0aW9uMR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxV
+bml0MR4wHAYDVQQDExVsb2NhbGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0B
+CQEWGnJvb3RAbG9jYWxob3N0LmxvY2FsZG9tYWluMB4XDTE3MDQwNzA4MjIwOFoX
+DTE4MDQwNzA4MjIwOFowgbsxCzAJBgNVBAYTAi0tMRIwEAYDVQQIEwlTb21lU3Rh
+dGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQKExBTb21lT3JnYW5pemF0aW9u
+MR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxVbml0MR4wHAYDVQQDExVsb2Nh
+bGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0BCQEWGnJvb3RAbG9jYWxob3N0
+LmxvY2FsZG9tYWluMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3e4HhLYPN
+gwJ4eKlW/UpmemPfK/a3mcafSqx/AJP34OC0Twj/cZNaqFPLOWfNjcq4mmiV++9a
+oJCkj4apDkyICI1emsrPaRdrlA/cCXcn3nupfOgcfpBV4vqNfqorEqpJCO7T4bcp
+Z6YHuxtRtP7gRJiE1ytAFP2jDvtvMqEWkwIDAQABo4IBHTCCARkwHQYDVR0OBBYE
+FL/OLJ7hJVedlL5Gk0fYvo6bZkqWMIHpBgNVHSMEgeEwgd6AFL/OLJ7hJVedlL5G
+k0fYvo6bZkqWoYHBpIG+MIG7MQswCQYDVQQGEwItLTESMBAGA1UECBMJU29tZVN0
+YXRlMREwDwYDVQQHEwhTb21lQ2l0eTEZMBcGA1UEChMQU29tZU9yZ2FuaXphdGlv
+bjEfMB0GA1UECxMWU29tZU9yZ2FuaXphdGlvbmFsVW5pdDEeMBwGA1UEAxMVbG9j
+YWxob3N0LmxvY2FsZG9tYWluMSkwJwYJKoZIhvcNAQkBFhpyb290QGxvY2FsaG9z
+dC5sb2NhbGRvbWFpboICfVUwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOB
+gQA+ah2n+bomON94KgibPEVPpmW+8N6Sq3f4qDG54urTnPD39GrYHvMwA3B2ang9
+l3zta5tXYAVj22kiNM2si4bOMQsa6FZR4AEzWCq9tZS/vTCCRaT79mWj3bUvtDkV
+2ScJ9I/7b4/cPHDOrAKdzdKxEE2oM0cwKxSnYBJk/4aJIw==
+-----END CERTIFICATE-----
+    Version: 2
+    Serial Number: 32085 (0x7d55)
+    Signature Algorithm: sha1WithRSAEncryption
+    Issuer: /C=--/ST=SomeState/L=SomeCity/O=SomeOrganization/OU=SomeOrganizationalUnit/CN=localhost.localdomain/emailAddress=root@localhost.localdomain
+    Not valid before: Apr  7 08:22:08 2017 GMT
+    Not valid after: Apr  7 08:22:08 2018 GMT
+    Subject: /C=--/ST=SomeState/L=SomeCity/O=SomeOrganization/OU=SomeOrganizationalUnit/CN=localhost.localdomain/emailAddress=root@localhost.localdomain
+    Public Key Algorithm: rsaEncryption
+    RSA Public Key: (1024 bit)
+      Public-Key: (1024 bit)
+      Modulus:
+          00:b7:7b:81:e1:2d:83:cd:83:02:78:78:a9:56:fd:
+          4a:66:7a:63:df:2b:f6:b7:99:c6:9f:4a:ac:7f:00:
+          93:f7:e0:e0:b4:4f:08:ff:71:93:5a:a8:53:cb:39:
+          67:cd:8d:ca:b8:9a:68:95:fb:ef:5a:a0:90:a4:8f:
+          86:a9:0e:4c:88:08:8d:5e:9a:ca:cf:69:17:6b:94:
+          0f:dc:09:77:27:de:7b:a9:7c:e8:1c:7e:90:55:e2:
+          fa:8d:7e:aa:2b:12:aa:49:08:ee:d3:e1:b7:29:67:
+          a6:07:bb:1b:51:b4:fe:e0:44:98:84:d7:2b:40:14:
+          fd:a3:0e:fb:6f:32:a1:16:93
+      Exponent: 65537 (0x10001)
+    X509v3 Extensions:
+      X509v3 Subject Key Identifier: 
+        BF:CE:2C:9E:E1:25:57:9D:94:BE:46:93:47:D8:BE:8E:9B:66:4A:96
+      X509v3 Authority Key Identifier: 
+        keyid:BF:CE:2C:9E:E1:25:57:9D:94:BE:46:93:47:D8:BE:8E:9B:66:4A:96
+        DirName:/C=--/ST=SomeState/L=SomeCity/O=SomeOrganization/OU=SomeOrganizationalUnit/CN=localhost.localdomain/emailAddress=root@localhost.localdomain
+        serial:7D:55
+
+      X509v3 Basic Constraints: 
+        CA:TRUE
+  Verify Certificate:
+    self signed certificate
+
+  SSL Certificate:
+Signature Algorithm: sha1WithRSAEncryption
+RSA Key Strength:    1024
+
+Subject:  localhost.localdomain
+Issuer:   localhost.localdomain
+
+Not valid before: Apr  7 08:22:08 2017 GMT
+Not valid after:  Apr  7 08:22:08 2018 GMT

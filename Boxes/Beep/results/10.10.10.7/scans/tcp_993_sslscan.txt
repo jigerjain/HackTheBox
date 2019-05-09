@@ -1,0 +1,22 @@
+Version: 1.11.11-static
+OpenSSL 1.0.2-chacha (1.0.2g-dev)
+
+Connected to 10.10.10.7
+
+Testing SSL server 10.10.10.7 on port 993 using SNI name 10.10.10.7
+
+  TLS Fallback SCSV:
+Server does not support TLS Fallback SCSV
+
+  TLS renegotiation:
+Session renegotiation not supported
+
+  TLS Compression:
+Compression disabled
+
+  Heartbleed:
+TLS 1.2 not vulnerable to heartbleed
+TLS 1.1 not vulnerable to heartbleed
+TLS 1.0 not vulnerable to heartbleed
+
+  Supported Server Cipher(s):

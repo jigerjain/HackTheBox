@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu May  9 01:45:07 2019 as: nmap -vv -&#45;reason -Pn -sV -p 3306 &quot;-&#45;script=(mysql* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_3306_mysql_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_3306_mysql_nmap.xml 10.10.10.7 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 3306 &quot;-&#45;script=(mysql* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_3306_mysql_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_3306_mysql_nmap.xml 10.10.10.7" start="1557380707" startstr="Thu May  9 01:45:07 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="3306"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1557380708"/>
+<taskend task="NSE" time="1557380708"/>
+<taskbegin task="NSE" time="1557380708"/>
+<taskend task="NSE" time="1557380708"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1557380708"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1557380708"/>
+<taskbegin task="SYN Stealth Scan" time="1557380708"/>
+<taskend task="SYN Stealth Scan" time="1557380708" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1557380708"/>
+<taskend task="Service scan" time="1557380718" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1557380718"/>
+<taskend task="NSE" time="1557380724"/>
+<taskbegin task="NSE" time="1557380724"/>
+<taskend task="NSE" time="1557380724"/>
+<host starttime="1557380708" endtime="1557380724"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="mysql" product="MySQL" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql</cpe></service><script id="mysql-empty-password" output="ERROR: Script execution failed (use -d to debug)"/><script id="mysql-vuln-cve2012-2122" output="ERROR: Script execution failed (use -d to debug)"/></port>
+</ports>
+<times srtt="255066" rttvar="255066" to="1275330"/>
+</host>
+<taskbegin task="NSE" time="1557380724"/>
+<taskend task="NSE" time="1557380724"/>
+<taskbegin task="NSE" time="1557380724"/>
+<taskend task="NSE" time="1557380724"/>
+<runstats><finished time="1557380724" timestr="Thu May  9 01:45:24 2019" elapsed="17.23" summary="Nmap done at Thu May  9 01:45:24 2019; 1 IP address (1 host up) scanned in 17.23 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

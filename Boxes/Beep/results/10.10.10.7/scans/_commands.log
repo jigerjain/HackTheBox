@@ -1,0 +1,106 @@
+nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/_full_tcp_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/_full_tcp_nmap.xml" 10.10.10.7
+
+nmap -vv --reason -Pn -sU -A --top-ports=20 --version-all -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/_top_20_udp_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/_top_20_udp_nmap.xml" 10.10.10.7
+
+nmap -vv --reason -Pn -sV -sC --version-all -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/_quick_tcp_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/_quick_tcp_nmap.xml" 10.10.10.7
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:123 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/udp_123_sslscan.txt"; fi
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:22 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_22_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 22 --script="ssh2-enum-algos,ssh-hostkey,ssh-auth-methods" -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_22_ssh_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_22_ssh_nmap.xml" 10.10.10.7
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:25 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_25_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 25 --script="(smtp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_25_smtp_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_25_smtp_nmap.xml" 10.10.10.7
+
+smtp-user-enum -M VRFY -U "/usr/share/seclists/Usernames/top-usernames-shortlist.txt" -t 10.10.10.7 -p 25 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_25_smtp_user-enum.txt"
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:80 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_80_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 80 --script="(http* or ssl*) and not (broadcast or dos or external or http-slowloris* or fuzzer)" -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_80_http_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_80_http_nmap.xml" 10.10.10.7
+
+curl -sSik http://10.10.10.7:80/ -m 10 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_80_http_index.html"
+
+curl -sSik http://10.10.10.7:80/robots.txt -m 10 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_80_http_robots.txt"
+
+if hash wkhtmltoimage 2> /dev/null; then wkhtmltoimage --format png http://10.10.10.7:80/ /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_80_http_screenshot.png; fi
+
+whatweb --color=never --no-errors -a 3 -v http://10.10.10.7:80 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_80_http_whatweb.txt"
+
+nikto -ask=no -h http://10.10.10.7:80 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_80_http_nikto.txt"
+
+gobuster -u http://10.10.10.7:80/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -e -k -l -s "200,204,301,302,307,403" -x "txt,html,php,asp,aspx" 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_80_http_gobuster.txt"
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:110 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_110_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 110 --script="(pop3* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_110_pop3_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_110_pop3_nmap.xml" 10.10.10.7
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:111 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_111_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 111 --script="(rpcinfo or nfs*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_111_nfs_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_111_nfs_nmap.xml" 10.10.10.7
+
+nmap -vv --reason -Pn -sV -p 111 --script="msrpc-enum,rpc-grind,rpcinfo" -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_111_rpc_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_111_rpc_nmap.xml" 10.10.10.7
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:143 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_143_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 143 --script="(imap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_143_imap_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_143_imap_nmap.xml" 10.10.10.7
+
+if [ "True" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:443 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_443_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 443 --script="(http* or ssl*) and not (broadcast or dos or external or http-slowloris* or fuzzer)" -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_443_http_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_443_https_nmap.xml" 10.10.10.7
+
+curl -sSik https://10.10.10.7:443/ -m 10 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_443_https_index.html"
+
+curl -sSik https://10.10.10.7:443/robots.txt -m 10 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_443_https_robots.txt"
+
+if hash wkhtmltoimage 2> /dev/null; then wkhtmltoimage --format png https://10.10.10.7:443/ /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_443_https_screenshot.png; fi
+
+whatweb --color=never --no-errors -a 3 -v https://10.10.10.7:443 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_443_https_whatweb.txt"
+
+nikto -ask=no -h https://10.10.10.7:443 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_443_https_nikto.txt"
+
+gobuster -u https://10.10.10.7:443/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -e -k -l -s "200,204,301,302,307,403" -x "txt,html,php,asp,aspx" 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_443_https_gobuster.txt"
+
+if [ "True" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:993 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_993_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 993 --script="(imap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_993_imap_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_993_imap_nmap.xml" 10.10.10.7
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:995 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_995_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 995 --script="(pop3* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_995_pop3_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_995_pop3_nmap.xml" 10.10.10.7
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:3306 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_3306_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 3306 --script="(mysql* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_3306_mysql_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_3306_mysql_nmap.xml" 10.10.10.7
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:4445 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_4445_sslscan.txt"; fi
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:10000 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_10000_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 10000 --script="(http* or ssl*) and not (broadcast or dos or external or http-slowloris* or fuzzer)" -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_10000_http_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_10000_http_nmap.xml" 10.10.10.7
+
+curl -sSik http://10.10.10.7:10000/ -m 10 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_10000_http_index.html"
+
+curl -sSik http://10.10.10.7:10000/robots.txt -m 10 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_10000_http_robots.txt"
+
+if hash wkhtmltoimage 2> /dev/null; then wkhtmltoimage --format png http://10.10.10.7:10000/ /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_10000_http_screenshot.png; fi
+
+whatweb --color=never --no-errors -a 3 -v http://10.10.10.7:10000 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_10000_http_whatweb.txt"
+
+nikto -ask=no -h http://10.10.10.7:10000 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_10000_http_nikto.txt"
+
+gobuster -u http://10.10.10.7:10000/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -e -k -l -s "200,204,301,302,307,403" -x "txt,html,php,asp,aspx" 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_10000_http_gobuster.txt"
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:745 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_745_sslscan.txt"; fi
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:4190 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_4190_sslscan.txt"; fi
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:4559 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_4559_sslscan.txt"; fi
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 10.10.10.7:5038 2>&1 | tee "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_5038_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 5038 --script="sip-enum-users,sip-methods" -oN "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_5038_sip_nmap.txt" -oX "/mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_5038_sip_nmap.xml" 10.10.10.7
+
+svwar -D -m INVITE -p 5038 10.10.10.7
+

@@ -1,0 +1,13 @@
+# Nmap 7.70 scan initiated Thu May  9 01:45:07 2019 as: nmap -vv --reason -Pn -sV -p 3306 --script=(mysql* or ssl*) and not (brute or broadcast or dos or external or fuzzer) -oN /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/tcp_3306_mysql_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Beep/results/10.10.10.7/scans/xml/tcp_3306_mysql_nmap.xml 10.10.10.7
+Nmap scan report for 10.10.10.7
+Host is up, received user-set (0.26s latency).
+Scanned at 2019-05-09 01:45:08 EDT for 16s
+
+PORT     STATE SERVICE REASON         VERSION
+3306/tcp open  mysql   syn-ack ttl 63 MySQL (unauthorized)
+|_mysql-empty-password: ERROR: Script execution failed (use -d to debug)
+|_mysql-vuln-cve2012-2122: ERROR: Script execution failed (use -d to debug)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu May  9 01:45:24 2019 -- 1 IP address (1 host up) scanned in 17.23 seconds
