@@ -1,0 +1,12 @@
+# Nmap 7.70 scan initiated Mon May  6 01:32:58 2019 as: nmap -vv --reason -Pn -sV -p 49157 --script=msrpc-enum,rpc-grind,rpcinfo -oN /mnt/hgfs/OSCP/HTB/Boxes/Blue/results/10.10.10.40/scans/tcp_49157_rpc_nmap.txt -oX /mnt/hgfs/OSCP/HTB/Boxes/Blue/results/10.10.10.40/scans/xml/tcp_49157_rpc_nmap.xml 10.10.10.40
+Nmap scan report for 10.10.10.40
+Host is up, received user-set (0.021s latency).
+Scanned at 2019-05-06 01:32:58 EDT for 54s
+
+PORT      STATE SERVICE REASON          VERSION
+49157/tcp open  msrpc   syn-ack ttl 127 Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon May  6 01:33:52 2019 -- 1 IP address (1 host up) scanned in 54.55 seconds

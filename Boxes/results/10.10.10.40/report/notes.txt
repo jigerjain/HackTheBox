@@ -1,0 +1,36 @@
+[*] msrpc found on tcp/135.
+
+
+
+[*] netbios-ssn found on tcp/139.
+
+
+
+[*] microsoft-ds found on tcp/445.
+
+
+
+[*] msrpc found on tcp/49152.
+
+
+
+[*] msrpc found on tcp/49153.
+
+
+
+[*] msrpc found on tcp/49154.
+
+
+
+[*] msrpc found on tcp/49155.
+
+
+
+[*] msrpc found on tcp/49156.
+
+
+
+[*] msrpc found on tcp/49157.
+
+
+
